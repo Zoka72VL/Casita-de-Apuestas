@@ -13,21 +13,21 @@ Bootstrap 5 Form Pack Template
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --body-bg-color:                #181717;
+  --body-bg-color:                #040404;
   --white-color:                  #ffffff;
-  --primary-color:                #E07A5F;
-  --secondary-color:              #F2CC8F;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #E07A5F;
-  --custom-btn-bg-hover-color:    #F2CC8F;
+  --primary-color:                #ff0000;
+  --secondary-color:              #f92d2d;
+  --section-bg-color:             #000000;
+  --custom-btn-bg-color:          #f40000;
+  --custom-btn-bg-hover-color:    #e70e078a;
   --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --link-hover-color:             #F2CC8F;
+  --p-color:                      #ff7777;
+  --link-hover-color:             #e70e07;
 
   --body-font-family:             'Poppins', sans-serif;
   --heading-font-family:          'Unbounded', sans-serif;
 
-  --h1-font-size:                 62px;
+  --h1-font-size:                 5vh;
   --h2-font-size:                 36px;
   --h3-font-size:                 28px;
   --h4-font-size:                 24px;
@@ -49,6 +49,15 @@ Bootstrap 5 Form Pack Template
 body {
   background-color: var(--body-bg-color);
   font-family: var(--body-font-family); 
+}
+
+
+
+.frente {
+  background-color: rgba(69, 21, 42, 0.5);
+  border-radius: var(--border-radius-large);
+  padding: 15px 25px; 
+
 }
 
 
@@ -109,11 +118,16 @@ button {
   touch-action: manipulation;
   transition: all 0.3s;
 }
+.discord{
+  color: #040404;
+  font-size: var(--h1-font-size);
+}
 
 a {
   display: inline-block;
-  color: var(--secondary-color);
+  color:rgb(175, 1, 255);
   text-decoration: none;
+  font-size: var(--h1-font-size);
 }
 
 a:hover {
