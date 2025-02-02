@@ -22,7 +22,7 @@ Bootstrap 5 Form Pack Template
   --custom-btn-bg-hover-color:    #e70e078a;
   --dark-color:                   #000000;
   --p-color:                      #ff7777;
-  --link-hover-color:             #e70e07;
+  --link-hover-color:             #fd0707;
 
   --body-font-family:             'Poppins', sans-serif;
   --heading-font-family:          'Unbounded', sans-serif;
@@ -54,7 +54,7 @@ body {
 
 
 .frente {
-  background-color: rgba(69, 21, 42, 0.5);
+  background-color: rgba(0, 0, 0, 0.533);
   border-radius: var(--border-radius-large);
   padding: 15px 25px; 
 
@@ -125,7 +125,7 @@ button {
 
 a {
   display: inline-block;
-  color:rgb(175, 1, 255);
+  color:rgb(255, 255, 255);
   text-decoration: none;
   font-size: var(--h1-font-size);
 }
