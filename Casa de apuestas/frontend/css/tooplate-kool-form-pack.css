@@ -473,7 +473,7 @@ strong {
   border-radius: var(--border-radius-large);
   border-width: 2px;
   box-shadow: none;
-  color: var(--p-color);
+  color: var(--dark-color);
   margin-bottom: 20px;
   padding: 10px;
   padding-left: 20px;
