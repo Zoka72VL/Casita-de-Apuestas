@@ -20,3 +20,6 @@ def registrar_usuario(nombre, email, password):
 
 # Inicializar la base de datos al cargar el módulo
 iniciar_sistema()
+
+# Validar tipo de Usuario
+
