@@ -3,7 +3,6 @@ import datetime
 from BaseModel import BaseModel
 
 
-
 class Evento(BaseModel):
     id = AutoField()
     nombre = CharField(max_length=100)
@@ -19,3 +18,4 @@ class Evento(BaseModel):
         except IntegrityError:
             raise ValueError("Error al crear el evento")
 
+    
