@@ -141,7 +141,7 @@ Bootstrap 5 Form Pack Template
         <div class="container">
           <div class="row frente">
             <div class="col-lg-6 col-12 mx-auto">
-              <form class="custom-form" role="form" method="post">
+              <form id="registerForm" class="custom-form" role="form" method="post">
                 <h2 class="hero-title text-center mb-4 pb-2">
                   Crea tu Usuario
                 </h2>
@@ -155,7 +155,7 @@ Bootstrap 5 Form Pack Template
                         id="full-name"
                         class="form-control"
                         placeholder="Full Name"
-                        required=""
+                        required="true"
                       />
 
                       <label for="floatingInput"> Nombre</label>
@@ -167,11 +167,11 @@ Bootstrap 5 Form Pack Template
                       <input
                         type="email"
                         name="email"
-                        id="email"
+                        id="emailReg"
                         pattern="[^ @]*@[^ @]*"
                         class="form-control"
                         placeholder="Email address"
-                        required=""
+                        required="true"
                       />
 
                       <label for="email">E-mail </label>
@@ -186,7 +186,7 @@ Bootstrap 5 Form Pack Template
                         id="password"
                         class="form-control"
                         placeholder="Password"
-                        required=""
+                        required="true"
                       />
 
                       <label for="password">Contraseña</label>
@@ -240,5 +240,6 @@ Bootstrap 5 Form Pack Template
     <script src="./js/countdown.js"></script>
     <script src="./js/init.js"></script>
     <script src="./js/cargarHeader.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>
