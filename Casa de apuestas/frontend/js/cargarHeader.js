@@ -20,4 +20,14 @@ function cargarBarra() {
 }
 cargarBarra();
 
+function cargarEvento() {
+  fetch("./components/eventos.html") // La ruta
+    .then((response) => response.text()) // Obtener el contenido como texto
+    .then((data) => {
+      document.getElementById("eventos-container").innerHTML = data; // Inserta el header en el contenedor
+    })
+    .catch((error) => console.error("Error al cargar el evento:", error)); // Manejo de errores
+}
+cargarEvento();
+
 
