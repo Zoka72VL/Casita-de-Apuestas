@@ -81,6 +81,13 @@ h1 {
   color: var(--white-color) ;
 }
 
+.iconoKick img {
+  /* align-items: center;  */
+  max-width: 3vh;
+  max-height: 3vh;
+  
+
+}
 h1 a {
   background-color: var(--primary-color);
   font-size: 5vh;
@@ -150,13 +157,10 @@ a {
   margin-left: 1.7vh;
   margin-right: 1.7vh;
   text-align: center;
-
-  
-
-  
 }
 
-a:hover {
+
+  a:hover {
   color: var(--link-hover-color);
 }
 
