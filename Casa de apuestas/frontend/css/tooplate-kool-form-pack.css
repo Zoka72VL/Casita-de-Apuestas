@@ -124,7 +124,7 @@ ul li {
 a,
 button {
   touch-action: manipulation;
-  transition: all 0.3s;
+  transition: all 0.3s; 
 }
 h1.subTitulo {
   font-size: 2.5vh;
