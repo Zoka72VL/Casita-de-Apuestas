@@ -8,58 +8,53 @@ Bootstrap 5 Form Pack Template
 
 */
 
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --body-bg-color:                #040404;
-  --white-color:                  #ffffff;
-  --primary-color:                #ff0000;
-  --secondary-color:              #f92d2d;
-  --section-bg-color:             #000000;
-  --custom-btn-bg-color:          #f40000;
-  --custom-btn-bg-hover-color:    #e70e078a;
-  --dark-color:                   #000000;
-  --p-color:                      #ffffff;
-  --link-hover-color:             #fd0707;
+  --body-bg-color: #040404;
+  --white-color: #ffffff;
+  --primary-color: #ff0000;
+  --secondary-color: #f92d2d;
+  --section-bg-color: #000000;
+  --custom-btn-bg-color: #f40000;
+  --custom-btn-bg-hover-color: #e70e078a;
+  --dark-color: #000000;
+  --p-color: #ffffff;
+  --link-hover-color: #fd0707;
 
-  --body-font-family:             'Poppins', sans-serif;
-  --heading-font-family:          'Unbounded', sans-serif;
+  --body-font-family: "Poppins", sans-serif;
+  --heading-font-family: "Unbounded", sans-serif;
 
-  --h1-font-size:                 5vh;
-  --h2-font-size:                 36px;
-  --h3-font-size:                 28px;
-  --h4-font-size:                 24px;
-  --h5-font-size:                 22px;
-  --h6-font-size:                 20px; 
-  --p-font-size:                  18px;
-  --menu-font-size:               16px;
-  --btn-font-size:                14px;
+  --h1-font-size: 5vh;
+  --h2-font-size: 36px;
+  --h3-font-size: 28px;
+  --h4-font-size: 24px;
+  --h5-font-size: 22px;
+  --h6-font-size: 20px;
+  --p-font-size: 18px;
+  --menu-font-size: 16px;
+  --btn-font-size: 14px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-normal:           400;
-  --font-weight-medium:           500;
-  --font-weight-bold:             700;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }
 
 body {
   background-color: var(--body-bg-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
-
-
 
 .frente {
   background-color: rgba(0, 0, 0, 0.533);
   border-radius: var(--border-radius-large);
-  padding: 15px 25px; 
-
+  padding: 15px 25px;
 }
-
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -78,15 +73,13 @@ h6 {
 h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--font-weight-bold);
-  color: var(--white-color) ;
+  color: var(--white-color);
 }
 
 .iconoKick img {
   /* align-items: center;  */
   max-width: 3vh;
   max-height: 3vh;
-  
-
 }
 h1 a {
   background-color: var(--primary-color);
@@ -94,7 +87,6 @@ h1 a {
   margin-left: 0vh;
   margin-right: 0vh;
   text-align: center;
-
 }
 h2 {
   font-size: var(--h2-font-size);
@@ -129,27 +121,27 @@ ul li {
   font-weight: var(--font-weight-normal);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
 }
-h1.subTitulo{
+h1.subTitulo {
   font-size: 2.5vh;
   text-align: center;
 }
-h1.subTitulo a{
+h1.subTitulo a {
   font-size: 2.5vh;
   background-color: var(--custom-btn-bg-color);
   text-align: center;
 }
-.discord{
+.discord {
   color: #040404;
   font-size: var(--h1-font-size);
 }
 
 a {
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: var(--font-weight-bold);
   font-size: 3px;
@@ -159,8 +151,7 @@ a {
   text-align: center;
 }
 
-
-  a:hover {
+a:hover {
   color: var(--link-hover-color);
 }
 
@@ -168,7 +159,6 @@ b,
 strong {
   font-weight: var(--font-weight-bold);
 }
-
 
 /*---------------------------------------
   SECTION               
@@ -195,7 +185,6 @@ strong {
 .page-404-title + h3 {
   color: var(--secondary-color);
 }
-
 
 /*---------------------------------------
   CUSTOM BUTTON               
@@ -242,7 +231,6 @@ strong {
 .custom-btn-group .link:hover {
   color: var(--link-hover-color);
 }
-
 
 /*---------------------------------------
   SITE HEADER        
@@ -327,7 +315,6 @@ strong {
   color: var(--link-hover-color);
 }
 
-
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
@@ -341,7 +328,7 @@ strong {
 }
 
 .hero-bg {
-  background-image: url('../images/people-practicing-social-integration.jpg');
+  background-image: url("../images/people-practicing-social-integration.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -400,7 +387,6 @@ strong {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   COUNTDOWN              
 -----------------------------------------*/
@@ -423,7 +409,6 @@ strong {
   font-size: var(--p-font-size);
   font-style: italic;
 }
-
 
 /*---------------------------------------
   MODAL EMAIL FORM        
@@ -495,7 +480,6 @@ strong {
   font-size: var(--btn-font-size);
 }
 
-
 /*---------------------------------------
   CUSTOM FORM               
 -----------------------------------------*/
@@ -520,7 +504,7 @@ strong {
   border-color: var(--primary-color);
 }
 
-.form-floating>label {
+.form-floating > label {
   padding-left: 20px;
 }
 
@@ -547,7 +531,7 @@ strong {
   color: var(--p-color);
 }
 
-.contact-form .form-floating>textarea {
+.contact-form .form-floating > textarea {
   border-radius: var(--border-radius-medium);
   height: 110px;
 }
@@ -557,7 +541,6 @@ strong {
   padding: 10.25px 35px;
   font-size: var(--p-font-size);
 }
-
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -590,7 +573,6 @@ strong {
   background: var(--primary-color);
   color: var(--white-color);
 }
-
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -640,3 +622,12 @@ strong {
   }
 }
 
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 1.5rem; /* Ajustar tamaño del texto */
+  }
+
+  .video-wrap {
+    display: none; /* Puedes ocultar el video en pantallas más pequeñas si es necesario */
+  }
+}
