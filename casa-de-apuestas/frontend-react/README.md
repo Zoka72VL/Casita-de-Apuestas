@@ -30,3 +30,5 @@ npm run dev
 Volver a instalar boostrap pero ahora en en el nuevo repositorio , osea estando posicionado en /frontend-react
 
 npm install bootstrap
+
+
