@@ -1,8 +1,10 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding:0 1rem;
+  margin: 0 auto;
   text-align: center;
+
 }
 
 .logo {
@@ -40,6 +42,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.contentHome {
+  width: 100%;
+   /* Asegura que haya 30px de margen a los lados */
+  position: relative;
+  z-index: 1;
+}
 /* Hacer que el video ocupe toda la pantalla */
 #video {
   position: absolute; /* Para que se posicione libremente en la pantalla */
@@ -47,5 +56,13 @@
   left: 0;
   width: 100vw; /* 100% del ancho de la pantalla */
   height: 100vh; /* 100% de la altura de la pantalla */
-  object-fit: cover; /* Esto hace que el video ocupe todo el espacio sin distorsionarse */
+  object-fit: cover;/* Esto hace que el video ocupe todo el espacio sin distorsionarse */
+  z-index: 0; 
+}
+
+.container {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 15px 25px;
+   /* Añadir margen de 30px a los lados */
 }

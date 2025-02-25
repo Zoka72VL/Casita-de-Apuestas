@@ -1,9 +1,8 @@
 const ContentHome = () => {
   return (
-    <section
-      className="hero-section d-flex justify-content-center align-items-center "
-      id="section_1"
-      
+    <content
+      className="contentHome"
+      id="contentHome"
     >
       <div className="container">
         <div className="row frente">
@@ -26,7 +25,7 @@ const ContentHome = () => {
           </div>
         </div>
       </div>
-    </section>
+    </content>
   );
 };
 
