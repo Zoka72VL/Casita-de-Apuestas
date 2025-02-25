@@ -1,3 +1,6 @@
+// import Logo from "./components/UI/Logo.jsx";
+
+
 const Header = () => {
   return (
     <>
@@ -53,14 +56,17 @@ const Header = () => {
                   className="social-icon-link bi-twitter"
                 ></a>
               </li>
+              
+
               <li className="social-icon-item">
-                <div className="iconoKick">
-                  <a href="https://kick.com/locoser" target="blank">
-                    Seguinos en
-                    <img src="./images/KICK ICON.jpg" />
-                  </a>
-                </div>
-              </li>
+                    <div className="iconoKick">
+                        <a href="https://kick.com/locoser"  target="blank">Seguinos en
+                          <img src="/public/Image/KICK ICON.jpg"/></a>
+                      </div>
+                </li>
+
+
+
             </ul>
 
             <div>
