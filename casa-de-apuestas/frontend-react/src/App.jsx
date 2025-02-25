@@ -1,12 +1,16 @@
-// import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
 import "./App.css";
+import Header from "./components/layout/Header.jsx";
+import ContentHome from "./components/layout/ContentHome.jsx";
+import Video from "./components/UI/Video.jsx";
 
 function App() {
-  // const [count, setCount] = useState(0);
-
-  return <></>;
+  return (
+    <>
+      <Header />
+      <ContentHome />
+      <Video />
+    </>
+  );
 }
 
 export default App;
