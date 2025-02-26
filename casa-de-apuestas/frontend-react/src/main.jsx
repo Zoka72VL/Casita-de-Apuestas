@@ -1,6 +1,5 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 
 import AdminPage from "./pages/AdminPage.jsx";
@@ -8,6 +7,7 @@ import CasterPage from "./pages/CasterPage.jsx";
 import UserPage from "./pages/UserPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
+import HomePage from "./pages/HomePage.jsx";
 
 
 // eslint-disable-next-line no-unused-vars
@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<App />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/caster" element={<CasterPage />} />
