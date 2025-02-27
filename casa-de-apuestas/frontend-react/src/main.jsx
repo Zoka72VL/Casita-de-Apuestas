@@ -9,6 +9,7 @@ import CasterPage from "./pages/CasterPage.jsx";
 import UserPage from "./pages/UserPage.jsx";
 
 
+import LoginForm from "./components/home/LoginForm.jsx";
 // eslint-disable-next-line no-unused-vars
 import * as bootstrap from 'bootstrap';
 import "./css/bootstrap.min.css";
@@ -26,25 +27,29 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/register" element={<RegisterPage />} />
+        {/* public routes  */}
+        <Route path="/home" element={<HomePage />} >
+          <Route path="register" element={<RegisterPage />} />
+          <Route path="login" element={<LoginForm />} />
+
+        </Route>
 
         <Route path="/" element={<AdminPage />}>
-          <Route index path="/admin" element={
+          <Route index path="admin" element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateAdminPage />
                   </React.Suspense>
                 } />
         </Route>
         <Route path="/" element={<CasterPage />}>
-          <Route index path="/caster" element={
+          <Route index path="caster" element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateCasterPage />
                   </React.Suspense>
                 } />
         </Route>
         <Route path="/" element={<UserPage />}>
-          <Route index path="/user" element={
+          <Route index path="user" element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateUserPage />
                   </React.Suspense>

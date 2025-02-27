@@ -1,3 +1,5 @@
+import { NavLink } from "react-router";
+
 const SidebarMenu = () => {
     return ( 
         <>
@@ -8,42 +10,27 @@ const SidebarMenu = () => {
                 id="offcanvasMenu"
                 aria-labelledby="offcanvasMenuLabel"
             >
-            <div className="offcanvas-header">
+                <div className="offcanvas-header">
                 <button
-                type="button"
-                className="btn-close ms-auto"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                ></button>
-            </div>
+                    type="button"
+                    className="btn-close ms-auto"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                    ></button>
+                </div>
         
-            <div
-            className="offcanvas-body d-flex flex-column justify-content-center align-items-center"
-            >
-            <nav>
-                <ul>
-                    <li>
-                        <a href="login.html">Login</a>
-                    </li>
-
-                    <li>
-                        <a href="register.html">Crea tu Usuario</a>
-                    </li>
-                    
-                    <li>
-                        <a href="password-reset.html">Restablecer Password</a>
-                    </li>
-                    
-                    <li>
-                        <a href="eventosCargados.html">Eventos disponibles</a>
-                    </li>
-                    
-                    <li>
-                        <a href="contact.html">Contact Form</a>
-                    </li>
-                </ul>
-            </nav>
-            </div>
+                <div
+                    className="offcanvas-body d-flex flex-column justify-content-center align-items-center"
+                    >
+                    <nav>
+                        <NavLink to="/home/login" end>
+                            Login
+                        </NavLink>
+                        <NavLink to="/home/register" end>
+                            Register
+                        </NavLink>
+                    </nav>
+                </div>
             </div>
         </>
         );
