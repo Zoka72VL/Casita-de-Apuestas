@@ -17,7 +17,6 @@ import "./css/tooplate-kool-form-pack.css";
 
 import { BrowserRouter, Route, Routes } from "react-router";
 
-const PrivateHomePage = (HomePage)
 const PrivateAdminPage = (AdminPage);
 const PrivateCasterPage = (CasterPage);
 const PrivateUserPage = (UserPage);
@@ -30,21 +29,21 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/home" element={<HomePage />} />
         <Route path="/register" element={<RegisterPage />} />
 
-        <Route path="/" element={<PrivateHomePage />}>
+        <Route path="/" element={<AdminPage />}>
           <Route index path="/admin" element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateAdminPage />
                   </React.Suspense>
                 } />
         </Route>
-        <Route path="/" element={<PrivateHomePage />}>
+        <Route path="/" element={<CasterPage />}>
           <Route index path="/caster" element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateCasterPage />
                   </React.Suspense>
                 } />
         </Route>
-        <Route path="/" element={<PrivateHomePage />}>
+        <Route path="/" element={<UserPage />}>
           <Route index path="/user" element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateUserPage />

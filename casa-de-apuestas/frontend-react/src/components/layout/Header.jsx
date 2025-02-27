@@ -3,9 +3,7 @@ import SidebarMenu from "./SidebarMenu";
 const Header = () => {
   return (
     <>
-    
-  
-    <header className="site-header">
+      <header className="site-header">
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-lg-12 col-12 d-flex align-items-center">
@@ -14,17 +12,14 @@ const Header = () => {
               href="index.html"
             >
               <i className="bi-coin"></i>
-
               <span>Casita de Apuestas</span>
             </a>
-
             <ul className="social-icon d-flex justify-content-center align-items-center mx-auto">
               <span>
                 <a href="login.html">
                   <span> Login </span>
                 </a>
               </span>
-
               <li className="social-icon-item">
                 <a
                   href="https://instagram.com/locoser_aoe/?hl=es"
@@ -32,7 +27,6 @@ const Header = () => {
                   className="social-icon-link bi-instagram"
                 ></a>
               </li>
-
               <li className="social-icon-item">
                 <a
                   href="https://discord.gg/h8Dyrkb"
@@ -40,7 +34,6 @@ const Header = () => {
                   className="social-icon-link bi-discord"
                 ></a>
               </li>
-
               <li className="social-icon-item">
                 <a
                   href="https://www.youtube.com/@LocoSer"
@@ -55,19 +48,13 @@ const Header = () => {
                   className="social-icon-link bi-twitter"
                 ></a>
               </li>
-              
-
               <li className="social-icon-item">
                     <div className="iconoKick">
                         <a href="https://kick.com/locoser"  target="blank">Seguinos en
                           <img src="/public/Image/KICK ICON.jpg"/></a>
                       </div>
                 </li>
-
-
-
             </ul>
-
             <div>
               <a
                 href="#"
@@ -79,7 +66,6 @@ const Header = () => {
                 <i className="bi-arrow-right ms-2"></i>
               </a>
             </div>
-
             <a
               className="bi-list offcanvas-icon"
               data-bs-toggle="offcanvas"
@@ -90,9 +76,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
-    <SidebarMenu/>
-  </>
+      </header>
+      <SidebarMenu/>
+    </>
   );
 };
 export default Header;

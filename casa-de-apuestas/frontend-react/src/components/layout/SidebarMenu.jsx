@@ -22,30 +22,30 @@ const SidebarMenu = () => {
             >
             <nav>
                 <ul>
-                <li>
-                    <a href="login.html">Login</a>
-                </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
 
-                <li>
-                    <a href="register.html">Crea tu Usuario</a>
+                    <li>
+                        <a href="register.html">Crea tu Usuario</a>
                     </li>
                     
                     <li>
-                    <a href="password-reset.html">Restablecer Password</a>
+                        <a href="password-reset.html">Restablecer Password</a>
                     </li>
                     
                     <li>
-                    <a href="eventosCargados.html">Eventos disponibles</a>
+                        <a href="eventosCargados.html">Eventos disponibles</a>
                     </li>
                     
                     <li>
-                    <a href="contact.html">Contact Form</a>
+                        <a href="contact.html">Contact Form</a>
                     </li>
-                    </ul>
-                    </nav>
-                    </div>
-                    </div>
-            </>
+                </ul>
+            </nav>
+            </div>
+            </div>
+        </>
         );
     };
             

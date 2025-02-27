@@ -1,11 +1,16 @@
+import ProfileAdminHeader from "../components/profiles/admin/ProfileAdminHeader";
+import ProfileAdminContent from "../components/profiles/admin/ProfileAdminContent";
+import Video from "../components/UI/Video";
+
+
+
 const AdminPage = () =>{
     return (
         <>
-            <div>
-                <h1>
-                    soy la page Admin
-                </h1>
-            </div>
+            <ProfileAdminHeader/>
+            <ProfileAdminContent />
+            <Video />
+            
         </>
     );
 };
