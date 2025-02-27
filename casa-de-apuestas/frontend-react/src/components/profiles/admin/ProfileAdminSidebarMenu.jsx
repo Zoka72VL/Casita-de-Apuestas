@@ -23,20 +23,23 @@ const ProfileAdminSidebarMenu =() => {
             >
             <nav>
                 <ul>
-                <li>
-                    <a href="login.html">1</a>
-                </li>
+                    <li>
+                        <a href="login.html">Crear Evento</a>
+                    </li>
+                {/* <NavLink to="/home/login" end>
+                            Login
+                </NavLink> */}
 
                 <li>
-                    <a href="register.html">2</a>
+                    <a href="register.html">Finalizar Evento</a>
                     </li>
                     
                     <li>
-                    <a href="password-reset.html">3</a>
+                    <a href="password-reset.html">Administrar Lco</a>
                     </li>
                     
                     <li>
-                    <a href="eventosCargados.html">4</a>
+                    <a href="eventosCargados.html">Cerrar Sesion</a>
                     </li>
                     
                     <li>

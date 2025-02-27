@@ -27,7 +27,10 @@ const SidebarMenu = () => {
                             Login
                         </NavLink>
                         <NavLink to="/home/register" end>
-                            Register
+                            Registro
+                        </NavLink>
+                        <NavLink to="/home/register" end>
+                            Eventos Disponibles
                         </NavLink>
                     </nav>
                 </div>

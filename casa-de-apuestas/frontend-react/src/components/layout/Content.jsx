@@ -29,7 +29,7 @@ const ContentHome = () => {
             </div>
           </div>
         </div>
-        </content>
+      </content>
       <Video />
       <Outlet/>
       
