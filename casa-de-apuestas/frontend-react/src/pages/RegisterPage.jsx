@@ -1,12 +1,13 @@
+import RegisterForm from "../components/home/RegisterForm";
+
 const RegisterPage = () =>{
     return (
         <>
             <div>
-                <h1>
-                    soy la page Register
-                </h1>
+                <RegisterForm/>
             </div>
         </>
+
     );
 };
 

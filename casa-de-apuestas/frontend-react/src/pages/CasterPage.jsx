@@ -1,11 +1,14 @@
+import ProfileCasterHeader from "../components/profiles/caster/ProfileCasterHeader";
+// import ProfileAdminContent from "../components/profiles/admin/ProfileAdminContent";
+import Video from "../components/UI/Video";
+
+
+
 const CasterPage = () =>{
     return (
         <>
-            <div>
-                <h1>
-                    soy la page Caster
-                </h1>
-            </div>
+            <ProfileCasterHeader/>
+            <Video />  
         </>
     );
 };

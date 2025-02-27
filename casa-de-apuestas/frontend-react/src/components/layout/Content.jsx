@@ -1,5 +1,5 @@
 import Video from "../UI/Video";
-import { Outlet } from "react-router";
+ import {Outlet} from "react-router";
 
 const ContentHome = () => {
   return (
