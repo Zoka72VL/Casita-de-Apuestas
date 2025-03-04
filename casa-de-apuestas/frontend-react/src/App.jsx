@@ -1,12 +1,24 @@
-import "./App.css";
+import { Outlet } from "react-router";
+import "../src/App.css";
+
+import "./css/bootstrap-icons.css";
+import "./css/bootstrap.min.css";
+import "./css/tooplate-kool-form-pack.css";
+
 import Header from "./components/layout/Header.jsx";
-import Content from "./components/layout/Content.jsx";
+import SidebarMenu from "./components/layout/SidebarMenu.jsx";
+import Video from "./components/UI/Video.jsx";
 
 function App() {
   return (
     <>
+      <Video/>
       <Header />
-      <Content />
+      <SidebarMenu />
+      <main>
+        {/* El contenido cambiará dependiendo de la ruta */}
+        <Outlet/>
+      </main>
      
     </>
   );

@@ -17,7 +17,6 @@ const ProfileAdminSidebarMenu =() => {
                 aria-label="Close"
                 ></button>
             </div>
-        
             <div
             className="offcanvas-body d-flex flex-column justify-content-center align-items-center"
             >
@@ -29,7 +28,6 @@ const ProfileAdminSidebarMenu =() => {
                 {/* <NavLink to="/home/login" end>
                             Login
                 </NavLink> */}
-
                 <li>
                     <a href="register.html">Finalizar Evento</a>
                     </li>

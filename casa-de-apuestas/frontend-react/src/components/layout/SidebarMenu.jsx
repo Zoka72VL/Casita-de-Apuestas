@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink, Outlet } from "react-router";
 
 const SidebarMenu = () => {
     return ( 
@@ -21,20 +21,24 @@ const SidebarMenu = () => {
         
                 <div
                     className="offcanvas-body d-flex flex-column justify-content-center align-items-center"
-                    >
-                    <nav>
-                        <NavLink to="/home/login" end>
+                >
+                    <nav className="offcanvas-body d-flex flex-column align-items-start">
+                        <NavLink to="/login" end>
                             Login
                         </NavLink>
-                        <NavLink to="/home/register" end>
+                        <NavLink to="/register" end>
                             Registro
                         </NavLink>
-                        <NavLink to="/home/register" end>
+                        <NavLink to="/events" end>
                             Eventos Disponibles
+                        </NavLink>
+                        <NavLink to="/counter" end>
+                            Ir al contador
                         </NavLink>
                     </nav>
                 </div>
             </div>
+            <Outlet/>
         </>
         );
     };
