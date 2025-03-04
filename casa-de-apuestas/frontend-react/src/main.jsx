@@ -17,6 +17,7 @@ import RegisterForm from './components/home/RegisterForm';
 import Events from "./components/home/Events.jsx";
 import Counter from "./components/home/Counter.jsx";
 import App from "./App.jsx";
+import Content from "./components/layout/Content.jsx";
 
 
 
@@ -31,30 +32,29 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         {/* public routes  */}
         <Route path="/" element={<App />} >
-          <Route index element= {<HomePage/>} />        
+          <Route index element= {<><HomePage /><Content /></>} />        
           <Route path="login" element={<LoginForm />} />
           <Route path="register" element={<RegisterForm />} />
           <Route path="events" element={<Events />} />
           <Route path="counter" element={<Counter />} />
-
         </Route>
 
-        <Route path="/" element={<AdminPage />}>
-          <Route index path="admin" element={
+        <Route path="admin" element={<AdminPage />}>
+          <Route index  element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateAdminPage />
                   </React.Suspense>
                 } />
         </Route>
-        <Route path="/" element={<CasterPage />}>
-          <Route index path="caster" element={
+        <Route path="caster" element={<CasterPage />}>
+          <Route index  element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateCasterPage />
                   </React.Suspense>
                 } />
         </Route>
-        <Route path="/" element={<UserPage />}>
-          <Route index path="user" element={
+        <Route path="user" element={<UserPage />}>
+          <Route index  element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateUserPage />
                   </React.Suspense>

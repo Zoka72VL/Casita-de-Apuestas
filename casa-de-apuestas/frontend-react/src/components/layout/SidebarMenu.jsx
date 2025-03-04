@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router";
+import { NavLink } from "react-router";
 
 const SidebarMenu = () => {
     return ( 
@@ -38,7 +38,6 @@ const SidebarMenu = () => {
                     </nav>
                 </div>
             </div>
-            <Outlet/>
         </>
         );
     };

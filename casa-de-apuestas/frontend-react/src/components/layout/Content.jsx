@@ -1,6 +1,5 @@
-import Video from "../UI/Video";
 
-const ContentHome = () => {
+const Content = () => {
   return (
       <>
       <content
@@ -29,10 +28,8 @@ const ContentHome = () => {
           </div>
         </div>
       </content>
- 
-      <Video />
     </>
   );
 };
 
-export default ContentHome;
+export default Content;
