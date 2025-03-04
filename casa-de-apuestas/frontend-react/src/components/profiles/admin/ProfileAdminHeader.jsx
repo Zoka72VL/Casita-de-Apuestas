@@ -16,9 +16,7 @@ const ProfileAdminHeader = () => {
                 </a>
                 <ul className="social-icon d-flex justify-content-center align-items-center mx-auto">
                 <span>
-                    <a href="login.html">
-                    <span> Login </span>
-                    </a>
+
                 </span>
                 <li className="social-icon-item">
                     <a

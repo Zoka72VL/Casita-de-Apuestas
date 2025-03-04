@@ -1,11 +1,11 @@
+
+import ProfileUserHeader from "../components/profiles/user/ProfileUserHeader";
+import Video from "../components/UI/Video";
 const UserPage = () =>{
     return (
         <>
-            <div>
-                <h1>
-                    soy la page User
-                </h1>
-            </div>
+            <ProfileUserHeader/>
+            <Video /> 
         </>
     );
 };

@@ -37,13 +37,45 @@ const ProfileAdminSidebarMenu =() => {
                     </li>
                     
                     <li>
+                    <a href="eventosCargados.html">Eliminar Usuario</a>
+                    </li>
+                    <li>
                     <a href="eventosCargados.html">Cerrar Sesion</a>
                     </li>
-                    
+                                       
+                      <li>
+                          <a href="login.html">Crear Evento</a>
+                      </li>
+                  {/* <NavLink to="/home/login" end>
+                              Login
+                  </NavLink> */}
+  
                     <li>
-                    <a href="contact.html">Contact Form</a>
-                    </li>
-                    </ul>
+                      <a href="register.html">Finalizar Evento</a>
+                      </li>
+                      
+                      <li>
+                      <a href="password-reset.html">Administrar Lco</a>
+                      </li>
+
+                      <li>
+                      <a href="eventosCargados.html">Ver Billetera</a>
+                      </li>
+                      
+                      <li>
+                      <a href="eventosCargados.html">Eliminar Usuario</a>
+                      </li>
+
+                      <li>
+                      <a href="eventosCargados.html">Crear Trivia</a>
+                      </li>
+
+                      <li>
+                      <a href="eventosCargados.html">Cerrar Sesion</a>
+                      </li>
+
+                      </ul>
+                                          
                     </nav>
                     </div>
                 </div>
