@@ -100,3 +100,26 @@
   background-color: rgb(14, 145, 47);
   z-index: 1;
 }
+/* Animación de deslizamiento hacia la derecha */
+/* Animación de apertura y cierre del offcanvas */
+.offcanvas-end {
+  transition: transform 0.3s ease-in-out; /* Aseguramos que la animación dure 300ms */
+}
+/* Esta clase se activará al hacer clic en una opción del menú */
+.offcanvas-close {
+  transition: transform 0.3s ease-in-out;  /* Aplicamos el mismo tiempo para el cierre */
+  transform: translateX(100%); 
+}
+.offcanvas-header {
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+
+}
+
+
+/* padding-top: 45px;
+padding-bottom: 45px;
+padding-right: 25px;
+padding-left: 25px */

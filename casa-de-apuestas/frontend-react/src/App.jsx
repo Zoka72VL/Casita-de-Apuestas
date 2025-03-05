@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <Video/>
-      <Header />
       <SidebarMenu />
+      <Header />
       <main>
-        {/* El contenido cambiará dependiendo de la ruta */}
+        
         <Outlet/>
       </main>
      
