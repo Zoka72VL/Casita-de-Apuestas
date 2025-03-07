@@ -15,7 +15,7 @@ import UserPage from "./pages/UserPage.jsx";
 import LoginForm from "./components/home/LoginForm.jsx";
 import RegisterForm from './components/home/RegisterForm';
 import Events from "./components/home/Events.jsx";
-// import Counter from "./components/home/Counter.jsx";
+import Counter from "./components/home/Counter.jsx";
 import App from "./App.jsx";
 import Content from "./components/layout/Content.jsx";
 
@@ -36,7 +36,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="login" element={<LoginForm />} />
           <Route path="register" element={<RegisterForm />} />
           <Route path="events" element={<Events />} />
-          {/* <Route path="counter" element={<Counter />} /> */}
+          <Route path="counter" element={<Counter />} />
         </Route>
 
         <Route path="admin" element={<AdminPage />}>
