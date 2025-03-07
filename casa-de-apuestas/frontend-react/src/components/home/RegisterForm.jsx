@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 
 const RegisterForm = () => {
   return ( 
@@ -72,7 +73,10 @@ const RegisterForm = () => {
                     </div>
                         <div className="col-lg-6 col-md-6 col-7">
                           <p className="mb-0">
-                            <a href="login.html" > Ya tenes cuenta?</a>
+                            {/* <a href="login.html" > Ya tenes cuenta?</a> */}
+                            <NavLink className="btn custom-btn custom-border-btn" to="/login" end>
+                            Ya tenes cuenta?
+                            </NavLink>
                           </p>
                         </div>
                       </div>
