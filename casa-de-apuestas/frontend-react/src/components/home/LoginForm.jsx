@@ -1,8 +1,12 @@
+import { NavLink } from "react-router";
 
 const LoginForm = () => {
     return (
         <>
-            
+            <content
+              className="contentHome"
+              id="contentHome"
+              >
               <div className="container">
                 <div className="row frente">
                   <div className="col-lg-5 col-12 mx-auto">
@@ -40,17 +44,16 @@ const LoginForm = () => {
                           </div>
 
                           <div className="col-lg-5 col-12">
-                            <a
-                              href="register.html"
-                              className="btn custom-btn custom-border-btn"
-                              >Registrate</a>
+                            <NavLink className="btn custom-btn custom-border-btn" to="/register" end>
+                            Registrate
+                            </NavLink>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
-          
+          </content>
         </>
     );
 }
