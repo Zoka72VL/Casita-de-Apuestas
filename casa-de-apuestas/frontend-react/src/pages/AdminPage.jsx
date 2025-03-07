@@ -1,5 +1,6 @@
 import ProfileAdminHeader from "../components/profiles/admin/ProfileAdminHeader";
 // import ProfileAdminContent from "../components/profiles/admin/ProfileAdminContent";
+import Counter from "../components/home/Counter";
 import Video from "../components/UI/Video";
 
 
@@ -9,6 +10,7 @@ const AdminPage = () =>{
         <>
             <ProfileAdminHeader/>
             {/* <ProfileAdminContent /> */}
+             <Counter/>
             <Video />  
         </>
     );
