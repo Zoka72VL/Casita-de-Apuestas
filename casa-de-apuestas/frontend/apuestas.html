@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Eventos y apuestas</title>
+    <title>Casa de apuestas</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +24,6 @@
     <link href="./css/bootstrap-icons.css" rel="stylesheet" />
 
     <link href="./css/tooplate-kool-form-pack.css" rel="stylesheet" />
-
     <!--
 
 Tooplate 2136 Kool Form Pack
@@ -62,19 +61,19 @@ Bootstrap 5 Form Pack Template
           <nav>
             <ul>
               <li>
-                <a href="login.html">Login</a>
+                <a href="login.html">Login Form</a>
               </li>
 
               <li>
-                <a href="register.html">Crea tu Usuario</a>
+                <a class="active" href="register.html">Create an account</a>
               </li>
 
               <li>
-                <a href="password-reset.html">Restablecer Password</a>
+                <a href="password-reset.html">Password Reset</a>
               </li>
 
               <li>
-                <a href="eventosCargados.html">Eventos disponibles</a>
+                <a href="404.html">404 Page</a>
               </li>
 
               <li>
@@ -103,6 +102,8 @@ Bootstrap 5 Form Pack Template
                 aria-label="Close"
               ></button>
             </div>
+
+
 
             <div class="modal-body">
               <form
@@ -135,40 +136,51 @@ Bootstrap 5 Form Pack Template
           </div>
         </div>
       </div>
+      <div class="container">
+        <h1 class="text-white text-center mt-2 mb-4 pb-2 fs-1 fs-sm-3">
+            apostar
+          </h1>
+      <div class="row frente">>
+<form action="" method="ge"; enctype="" target="">
+      <select name="eventos" id="eventosseleccionables">
+        <option value="">seleccion ganador</option>
+        <option value="viper ">viper</option>
+        <option value="hera">header</option>
+        <option value="accm ">accm</option>
+        <option value="tatoh ">tatoh</option>
+        <option value="mr yo ">mr yo</option>
+        <option value="daut ">daut</option>
+      </select>
+      <button id="boton" type="submit">apostar</button>
+</form>     
+<br>
+<br>
+<br>
+<br> 
+<form action="" method="ge"; enctype="" target="">
+  <select name="cantidadapuesta" id="cantidadapuesta">
+    <option value="">seleccione el monto a apostar</option>
+    <option value="viper ">viper</option>
+    <option value="hera">header</option>
+    <option value="accm ">accm</option>
+    <option value="tatoh ">tatoh</option>
+    <option value="mr yo ">mr yo</option>
+    <option value="daut ">daut</option>
+  </select>
+  <button id="boton2" type="submit">apostar</button>
+</form>      
+<script> function confirmarapuesta(){
+     prompt("¿estas seguro de tu apuesta?");
+  
+}
+boton2.addEventListener('click',confirmarapuesta,);
+boton.addEventListener('click',confirmarapuesta,);
+</script> 
 
-      <section
-        class="hero-section d-flex justify-content-center align-items-center"
-        id="section_1"
-      >
-        <div class="container">
-          <div class="row frente">
-            <div class="col-lg-5 col-12 mx-auto">
-              <!-- <div class="discord"> Buscanos en Discord </div>  -->
 
-              <h1 class="text-white text-center mt-2 mb-4 pb-2 fs-1 fs-sm-3">
-                <a>L</a>a Clandestinida<a>d</a>
-              </h1>
-              <h1 class="subTitulo fs-3 fs-sm-4"><a> A</a>GE <a>II</a></h1>
-
-              <a
-                rel="nofollow"
-                target="_blank"
-                href="register.html"
-                class="text-center d-block"
-                >Sumate a la comunidad para ganar tus Lco</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="video-wrap embed-responsive embed-responsive-16by9">
-          <video
-            autoplay=""
-            loop=""
-            muted="false"
-            class="embed-responsive-item custom-video"
-            poster=""
-          >
+      <div 
+        <div class="video-wrap">
+          <video autoplay="" loop="" muted="" class="custom-video" poster="">
             <source src="./videos/video.mp4" type="video/mp4" />
 
             Your browser does not support the video tag.
@@ -183,5 +195,6 @@ Bootstrap 5 Form Pack Template
     <script src="./js/countdown.js"></script>
     <script src="./js/init.js"></script>
     <script src="./js/cargarHeader.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>
