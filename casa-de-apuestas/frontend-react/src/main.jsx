@@ -1,22 +1,25 @@
 import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router";
 import "./index.css";
-
-import HomePage from "./pages/HomePage.jsx";
-import RegisterPage from "./pages/RegisterPage.jsx";
-import AdminPage from "./pages/AdminPage.jsx";
-import CasterPage from "./pages/CasterPage.jsx";
-import UserPage from "./pages/UserPage.jsx";
-
-
-import LoginForm from "./components/home/LoginForm.jsx";
 // eslint-disable-next-line no-unused-vars
 import * as bootstrap from 'bootstrap';
 import "./css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css"
 import "./css/tooplate-kool-form-pack.css";
 
-import { BrowserRouter, Route, Routes } from "react-router";
+import HomePage from "./pages/HomePage.jsx";
+import AdminPage from "./pages/AdminPage.jsx";
+import CasterPage from "./pages/CasterPage.jsx";
+import UserPage from "./pages/UserPage.jsx";
+import LoginForm from "./components/home/LoginForm.jsx";
+import RegisterForm from './components/home/RegisterForm';
+import Events from "./components/home/Events.jsx";
+import Counter from "./components/home/Counter.jsx";
+import App from "./App.jsx";
+import Content from "./components/layout/Content.jsx";
+
+
 
 const PrivateAdminPage = (AdminPage);
 const PrivateCasterPage = (CasterPage);
@@ -28,28 +31,30 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         {/* public routes  */}
-        <Route path="/home" element={<HomePage />} >
-          <Route path="register" element={<RegisterPage />} />
+        <Route path="/" element={<App />} >
+          <Route index element= {<><HomePage /><Content /></>} />        
           <Route path="login" element={<LoginForm />} />
-
+          <Route path="register" element={<RegisterForm />} />
+          <Route path="events" element={<Events />} />
+          <Route path="counter" element={<Counter />} />
         </Route>
 
-        <Route path="/" element={<AdminPage />}>
-          <Route index path="admin" element={
+        <Route path="admin" element={<AdminPage />}>
+          <Route index  element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateAdminPage />
                   </React.Suspense>
                 } />
         </Route>
-        <Route path="/" element={<CasterPage />}>
-          <Route index path="caster" element={
+        <Route path="caster" element={<CasterPage />}>
+          <Route index  element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateCasterPage />
                   </React.Suspense>
                 } />
         </Route>
-        <Route path="/" element={<UserPage />}>
-          <Route index path="user" element={
+        <Route path="user" element={<UserPage />}>
+          <Route index  element={
                   <React.Suspense fallback={<div>Cargando...</div>}>
                     <PrivateUserPage />
                   </React.Suspense>

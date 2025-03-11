@@ -1,7 +1,5 @@
-import Video from "../UI/Video";
- import {Outlet} from "react-router";
 
-const ContentHome = () => {
+const Content = () => {
   return (
       <>
       <content
@@ -30,11 +28,8 @@ const ContentHome = () => {
           </div>
         </div>
       </content>
-      <Video />
-      <Outlet/>
-      
-      </>
+    </>
   );
 };
 
-export default ContentHome;
+export default Content;

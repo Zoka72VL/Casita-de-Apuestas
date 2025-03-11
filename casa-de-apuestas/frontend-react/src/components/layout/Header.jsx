@@ -1,4 +1,5 @@
 import SidebarMenu from "./SidebarMenu";
+import { NavLink } from "react-router";
 
 const Header = () => {
   return (
@@ -9,16 +10,21 @@ const Header = () => {
           <div className="col-lg-12 col-12 d-flex align-items-center">
             <a
               className="site-header-text d-flex justify-content-center align-items-center me-auto"
-              href="index.html"
+              
             >
               <i className="bi-coin"></i>
-              <span>Casita de Apuestas</span>
+              <span>
+                <NavLink to="/" end>
+                  Casita de Apuestas
+                </NavLink>
+                </span>
             </a>
             <ul className="social-icon d-flex justify-content-center align-items-center mx-auto">
               <span>
-                <a href="login.html">
-                  <span> Login </span>
-                </a>
+              
+                <NavLink to="/login" end>
+                            Login
+                </NavLink>
               </span>
               <li className="social-icon-item">
                 <a

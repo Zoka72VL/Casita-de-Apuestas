@@ -70,6 +70,19 @@ h6 {
   letter-spacing: -1px;
 }
 
+
+.iconoUsuario{
+  width: 4px;
+  height: 4px;
+  max-width: 1vh;
+  max-height: 1vh;
+}
+
+.tituloUsuario{
+  display: flex;
+
+
+}
 h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--font-weight-bold);
