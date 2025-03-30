@@ -18,6 +18,7 @@ import Events from "./components/home/Events.jsx";
 import Counter from "./components/home/Counter.jsx";
 import App from "./App.jsx";
 import Content from "./components/layout/Content.jsx";
+import CrearEvento from "./components/profiles/admin/CrearEvento.jsx";
 
 
 
@@ -37,6 +38,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="register" element={<RegisterForm />} />
           <Route path="events" element={<Events />} />
           <Route path="counter" element={<Counter />} />
+          <Route path="crearevento" element={<CrearEvento />} />
         </Route>
 
         <Route path="admin" element={<AdminPage />}>
