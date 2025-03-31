@@ -602,6 +602,17 @@ strong {
   color: var(--white-color);
 }
 
+
+/*---------------------------------------
+  Players Style               
+-----------------------------------------*/
+
+.imgPlayer{
+  width: 20px;       /* Diámetro = 2 × radio */
+  height: 20px;      /* Mismo valor que width para que sea un círculo perfecto */
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover;  /* Ajusta la imagen sin deformarla (opcional) */
+}
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
