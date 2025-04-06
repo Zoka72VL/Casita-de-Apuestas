@@ -68,16 +68,20 @@
    /* Añadir margen de 30px a los lados */
 }
 
-.content-counter {
+.content-counter  {
   color: lawngreen;
+  border: 3px solid #ff2121;
+  border-radius: 10px;
   z-index: 1;
+  margin: 2vh;
+  padding: 1vh;
 }
 .section-counter  {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(16, 16, 16); /* Fondo completamente sólido */
+  background-color: rgba(21, 14, 23, 0.654); /* Fondo completamente sólido */
   position: relative; /* Necesario para los pseudo-elementos */
   z-index: 1;
   border-radius: 100px;
@@ -92,22 +96,20 @@
   z-index: 1;
 }
 .section-counter-button button {
+  align-items: center;
+  justify-content: center;
   margin: 5px; /* Espacio entre los botones */
   padding: 10px 20px; /* Espaciado dentro de los botones */
-  border: 2px solid #ccc; /* Borde de los botones */
+  border: 3px solid #ff2121; /* Borde de los botones */
   border-radius: 100px; /* Bordes redondeados */
   cursor:pointer; /* Cambia el cursor cuando pasa sobre el botón */
-  background-color: rgb(14, 145, 47);
   z-index: 1;
 }
-/* Animación de deslizamiento hacia la derecha */
-/* Animación de apertura y cierre del offcanvas */
 .offcanvas-end {
-  transition: transform 0.3s ease-in-out; /* Aseguramos que la animación dure 300ms */
+  transition: transform 0.3s ease-in-out; 
 }
-/* Esta clase se activará al hacer clic en una opción del menú */
 .offcanvas-close {
-  transition: transform 0.3s ease-in-out;  /* Aplicamos el mismo tiempo para el cierre */
+  transition: transform 0.3s ease-in-out;  
   transform: translateX(100%); 
 }
 .offcanvas-header {

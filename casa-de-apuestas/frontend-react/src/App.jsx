@@ -10,7 +10,7 @@ function App() {
       <Video/>
       <SidebarMenu />
       <Header />
-      <main>
+      <main className="section-counter">
         
         <Outlet/>
       </main>

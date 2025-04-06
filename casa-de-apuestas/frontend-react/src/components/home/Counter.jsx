@@ -5,19 +5,16 @@ const Counter = () => {
 
     return (
         <>
-            <section1 className="section-counter">
+            <section1 >
+                <container>
                 <h2 className="content-counter">{counter}</h2>
-                <hr/>
+                </container>
             </section1>
-            <section2 className="section-counter-button ">
-                    <div className="custom-border-btn buttons-wrapper ">
-                        <button onClick={() => {setCounter(counter + 1)}} >Aumentar</button>
-                    </div>
+            <section2 className="section-counter-button  buttons-wrapper ">
+                        <button className="custom-border-btn" onClick={() => {setCounter(counter + 1)}} >Aumentar</button>           
+                        <button className="custom-border-btn" onClick={() =>{setCounter(counter - 1)}}  >Disminuir</button>
+                        <button className="custom-border-btn" onClick={() =>{setCounter(0)}} >Resetear</button>
             </section2>
-                    <div>
-                        <button >Resetear</button>
-                        <button >Disminuir</button>
-                    </div>
         </>
     );
 } ;
