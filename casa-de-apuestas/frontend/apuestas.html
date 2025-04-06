@@ -137,36 +137,41 @@ Bootstrap 5 Form Pack Template
         </div>
       </div>
       <div class="container">
-        <h1 class="text-white text-center mt-2 mb-4 pb-2 fs-1 fs-sm-3">
-            apostar
-          </h1>
+
       <div class="row frente">>
+
+
+
+
+        <h1 class="text-white text-center mt-2 mb-4 pb-2 fs-1 fs-sm-3">
+          apostar
+        </h1>
 <form action="" method="ge"; enctype="" target="">
       <select name="eventos" id="eventosseleccionables">
-        <option value="">seleccion ganador</option>
-        <option value="viper ">viper</option>
-        <option value="hera">header</option>
-        <option value="accm ">accm</option>
-        <option value="tatoh ">tatoh</option>
-        <option value="mr yo ">mr yo</option>
-        <option value="daut ">daut</option>
+        <option value="">Seleccione Player</option>
+        <option value="viper ">Player Azul</option>
+        <option value="viper ">Player Rojo</option>
+
       </select>
-      <button id="boton" type="submit">apostar</button>
 </form>     
 <br>
 <br>
 <br>
 <br> 
-<form action="" method="ge"; enctype="" target="">
-  <select name="cantidadapuesta" id="cantidadapuesta">
-    <option value="">seleccione el monto a apostar</option>
-    <option value="viper ">viper</option>
-    <option value="hera">header</option>
-    <option value="accm ">accm</option>
-    <option value="tatoh ">tatoh</option>
-    <option value="mr yo ">mr yo</option>
-    <option value="daut ">daut</option>
-  </select>
+    <div class="form-floating p-0">
+      <input
+      type="email"
+      name="email"
+      id="emailUser"
+      pattern="[^ @]*@[^ @]*"
+      class="form-control"
+      placeholder="Email address"
+      required=""
+      />
+
+      <label for="password">Cantidad Para Apostar</label>
+    </div>
+ 
   <button id="boton2" type="submit">apostar</button>
 </form>      
 <script> function confirmarapuesta(){
@@ -178,7 +183,7 @@ boton.addEventListener('click',confirmarapuesta,);
 </script> 
 
 
-      <div 
+
         <div class="video-wrap">
           <video autoplay="" loop="" muted="" class="custom-video" poster="">
             <source src="./videos/video.mp4" type="video/mp4" />

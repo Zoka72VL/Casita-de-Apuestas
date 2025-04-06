@@ -1,87 +1,73 @@
+import { NavLink } from "react-router";
+import { useRef, useState } from "react";
+import { useNavigate } from "react-router";
 
-const ProfileAdminSidebarMenu =() => {
-  return (
-    <>
+const SidebarMenu = () => {
+    const navigate = useNavigate();
+    const offcanvasMenuRef = useRef(null);  // Referencia al menú offcanvas
+    const [isClosing, setIsClosing] = useState(false); 
+    // Función para cerrar el menú con animación
+    const closeMenu = () => {
+     // Activamos el estado de cierre y aplicamos la clase de animación
+    setIsClosing(true);   
+    // Función para cerrar el menú al hacer clic en un enlace
+    const offcanvas = new window.bootstrap.Offcanvas(offcanvasMenuRef.current);
+    offcanvas.hide();  
+};
+ 
+    const handleTransitionEnd = () => {
+    setIsClosing(false);
+    };
+
+  const handleLinkClick = (e) => {
+    closeMenu();  
+    e.preventDefault(); 
+    setTimeout(() => {
+        navigate(e.target.href);
+    }, 400);  
+  };
+
+    return ( 
+        <>
             <div
-                className="offcanvas offcanvas-end"
+                className={`offcanvas offcanvas-end ${isClosing ? 'offcanvas-close' : ''}`}
                 data-bs-scroll="true"
                 tabIndex="-1"
                 id="offcanvasMenu"
                 aria-labelledby="offcanvasMenuLabel"
+                ref={offcanvasMenuRef}
+                onTransitionEnd={handleTransitionEnd}
             >
-            <div className="offcanvas-header">
+                <div className="offcanvas-header">
                 <button
-                type="button"
-                className="btn-close ms-auto"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
+                    type="button"
+                    className="btn-close ms-auto"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                    onClick={closeMenu}
                 ></button>
-            </div>
-            <div
-            className="offcanvas-body d-flex flex-column justify-content-center align-items-center"
-            >
-            <nav>
-                <ul>
-                    <li>
-                        <a href="login.html">Crear Evento</a>
-                    </li>
-                {/* <NavLink to="/home/login" end>
-                            Login
-                </NavLink> */}
-                <li>
-                    <a href="register.html">Finalizar Evento</a>
-                    </li>
-                    
-                    <li>
-                    <a href="password-reset.html">Administrar Lco</a>
-                    </li>
-                    
-                    <li>
-                    <a href="eventosCargados.html">Eliminar Usuario</a>
-                    </li>
-                    <li>
-                    <a href="eventosCargados.html">Cerrar Sesion</a>
-                    </li>
-                                       
-                      <li>
-                          <a href="login.html">Crear Evento</a>
-                      </li>
-                  {/* <NavLink to="/home/login" end>
-                              Login
-                  </NavLink> */}
-  
-                    <li>
-                      <a href="register.html">Finalizar Evento</a>
-                      </li>
-                      
-                      <li>
-                      <a href="password-reset.html">Administrar Lco</a>
-                      </li>
-
-                      <li>
-                      <a href="eventosCargados.html">Ver Billetera</a>
-                      </li>
-                      
-                      <li>
-                      <a href="eventosCargados.html">Eliminar Usuario</a>
-                      </li>
-
-                      <li>
-                      <a href="eventosCargados.html">Crear Trivia</a>
-                      </li>
-
-                      <li>
-                      <a href="eventosCargados.html">Cerrar Sesion</a>
-                      </li>
-
-                      </ul>
-                                          
-                    </nav>
-                    </div>
                 </div>
-      
-    </>
-  );
-}
-
-export default ProfileAdminSidebarMenu;
+                <div
+                    className="offcanvas-body d-flex flex-column justify-content-center align-items-center"
+                >
+                    <nav className="offcanvas-body d-flex flex-column align-items-start">
+                        <NavLink to="/admin/CrearEvento" end onClick={handleLinkClick}>
+                            Crear Evento
+                        </NavLink>
+                        <NavLink to="/register" end onClick={handleLinkClick}>
+                            Registro
+                        </NavLink>
+                        <NavLink to="/events" end onClick={handleLinkClick}>
+                            Eventos Disponibles
+                        </NavLink>
+                        <NavLink to="/counter" end onClick={handleLinkClick}>
+                            Ir al contador
+                        </NavLink>
+                    </nav>
+                </div>
+            </div>
+        </>
+        );
+    };
+            
+export default SidebarMenu;

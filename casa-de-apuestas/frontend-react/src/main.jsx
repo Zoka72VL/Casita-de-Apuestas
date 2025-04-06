@@ -19,6 +19,7 @@ import Counter from "./components/home/Counter.jsx";
 import App from "./App.jsx";
 import Content from "./components/layout/Content.jsx";
 import { FinderFruit } from "./components/home/FinderFruit.jsx";
+import CrearEvento from "./components/profiles/admin/CrearEvento.jsx";
 
 
 
@@ -39,6 +40,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="events" element={<Events />} />
           <Route path="counter" element={<Counter />} />
           <Route path="fruit" element={<FinderFruit />} />
+          <Route path="crearevento" element={<CrearEvento />} />
         </Route>
 
         <Route path="admin" element={<AdminPage />}>

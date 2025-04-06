@@ -18,6 +18,8 @@ Bootstrap 5 Form Pack Template
   --secondary-color: #f92d2d;
   --section-bg-color: #000000;
   --custom-btn-bg-color: #f40000;
+  --custom-btn-bg-azul: #1d19ee;
+
   --custom-btn-bg-hover-color: #e70e078a;
   --dark-color: #000000;
   --p-color: #ffffff;
@@ -533,6 +535,19 @@ strong {
   margin-bottom: 0;
   padding-left: 10px;
 }
+.custom-form-button-azul[type="submit"] {
+  background: var(--custom-btn-bg-azul);
+  border: none;
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-family: var(--heading-font-family);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-bold);
+  transition: all 0.3s;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
 
 .custom-form button[type="submit"]:hover,
 .custom-form button[type="submit"]:focus {
@@ -587,6 +602,17 @@ strong {
   color: var(--white-color);
 }
 
+
+/*---------------------------------------
+  Players Style               
+-----------------------------------------*/
+
+.imgPlayer{
+  width: 20px;       /* Diámetro = 2 × radio */
+  height: 20px;      /* Mismo valor que width para que sea un círculo perfecto */
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover;  /* Ajusta la imagen sin deformarla (opcional) */
+}
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
