@@ -613,6 +613,20 @@ strong {
   border-radius: 50%; /* Hace la imagen circular */
   object-fit: cover;  /* Ajusta la imagen sin deformarla (opcional) */
 }
+.imgPerfil{
+  width: 15lvh;       /* Diámetro = 2 × radio */
+  height: 15lvh;      /* Mismo valor que width para que sea un círculo perfecto */
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover;  /* Ajusta la imagen sin deformarla (opcional) */
+
+}
+.imgPerfil{
+  width: 10lvh;       /* Diámetro = 2 × radio */
+  height: 10lvh;      /* Mismo valor que width para que sea un círculo perfecto */
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover;  /* Ajusta la imagen sin deformarla (opcional) */
+
+}
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
