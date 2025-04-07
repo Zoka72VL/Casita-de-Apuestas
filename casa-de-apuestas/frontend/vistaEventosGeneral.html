@@ -92,101 +92,74 @@ Bootstrap 5 Form Pack Template
         </div>
       </div>
 
-      <section
-        class="hero-section d-flex justify-content-center align-items-center"
-      >
-
- 
-
+      <section class="hero-section d-flex justify-content-center align-items-center">
         <div class="container">
-            <h1 class="text-white text-center mt-2 mb-4 pb-2 fs-1 fs-sm-3">
-                Eventos Para Apostar
-              </h1>
-
-            <div class="row frente">
-              <div class="col-lg-6 col-12 mx-auto">
-                <h1 class="text-white text-center mt-2 mb-4 pb-2 fs-1 fs-sm-3">
-                  Nombre del Evento
-                </h1>
-                <div class="row justify-content-center align-items-center">
-
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-lg-5 col-md-5 col-5 ms-auto">
-                      <div class="row justify-content-center align-items-center">
-                          <button type="submit" class="form-control custom-form-button-azul">Nombre del Jugador COLOR AZUL</button>
-                      </div>
-                      <h1 class="text-white text-center mt-2 mb-4 pb-2 fs-1 fs-sm-3">
-                        LCO APOSTADAS Y Porcentaje 
-                      </h1>
-
-                      <form id="registerForm" class="custom-form" role="form" method="post">
-                      <img src="./images/heart.jpg" alt="Descripción" class="ImgPlayer">
-                  
-                      <div class="row justify-content-center align-items-center">
-                          <div class="col-lg-5 col-md-5 col-5 ms-auto">
-                          <button type="submit" class="form-control">Nombre del Jugador COLOR ROJO</button>
-                      </div>
-                      
-                      <h1 class="text-white text-center mt-2 mb-4 pb-2 fs-1 fs-sm-3">
-                        LCO APOSTADAS Y Porcentaje 
-                      </h1>
-                      <img src="./images/heart.jpg" alt="Descripción" class="ImgPlayer">
-
-  
-                      <div class="col-lg-6 col-md-6 col-7">
-                          <p class="mb-0"></p>
-                      </div>
-                  </div>
-                  <button type="submit" class="form-control">Pagar Apuesta</button>
-                  <button type="submit" class="form-control">Mofificar Evento</button>
-                  <button type="submit" class="form-control">Eliminar Evento</button>
-
-
-  
-                  <div class="col-lg-12 col-12">
-                      <div class="form-floating p-0">
-                        <input
-                          type="password"
-                          name="password"
-                          id="password"
-                          class="form-control"
-                          placeholder="Password"
-                          required="true"
-                        />
-  
-                        <label for="password">Ingresa la cantidad de LCO</label>
-                      </div>
-  
-                     
-                    </div>
-  
-                    <div class="row justify-content-center align-items-center">
-                      <div class="col-lg-5 col-md-5 col-5 ms-auto">
-                        <button type="submit" class="form-control">Confirmar Apuesta</button>
-                      </div>
-  
-                      <div class="col-lg-6 col-md-6 col-7">
-                        <p class="mb-0">
-                         
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </form>
+          <h3 class="text-white text-center mt-2 mb-4 pb-2 fs-1 fs-sm-3">
+            Eventos Para Apostar
+          </h3>
+      
+          <div class="row frente">
+            <div class="col-lg-6 col-12 mx-auto">
+              <h2 class="text-white text-center mt-2 mb-4 fs-1 fs-sm-3">
+                Nombre del Evento
+              </h2>
+      
+              <form id="registerForm" class="custom-form" method="post">
+                <!-- Selección de Jugador -->
+                <div class="row justify-content-center align-items-center mb-4 text-center">
+                  <input type="radio" class="btn-check" name="jugador" id="jugadorAzul" value="azul" required />
+                  <label class="btn btn-outline-primary col-5 mx-1" for="jugadorAzul">
+                    Nombre del Jugador COLOR AZUL
+                  </label>
+      
+                  <input type="radio" class="btn-check" name="jugador" id="jugadorRojo" value="rojo" required />
+                  <label class="btn btn-outline-danger col-5 mx-1" for="jugadorRojo">
+                    Nombre del Jugador COLOR ROJO
+                  </label>
                 </div>
+      
+                <!-- LCO apostadas y porcentajes -->
+                <div class="row mb-4 text-white text-center">
+                  <div class="col-6">
+                    <h3>LCO APOSTADAS: 150</h3>
+                    <p>Porcentaje: 60%</p>
+                  </div>
+                  <div class="col-6">
+                    <h3>LCO APOSTADAS: 100</h3>
+                    <p>Porcentaje: 40%</p>
+                  </div>
+                </div>
+      
+                <!-- Ingreso de cantidad -->
+                <div class="form-floating mb-4">
+                  <input
+                    type="number"
+                    name="lco"
+                    id="lco"
+                    class="form-control"
+                    placeholder="Cantidad de LCO"
+                    min="1"
+                    required
+                  />
+                  <label for="lco">Ingresa la cantidad de LCO</label>
+                </div>
+      
+                <!-- Botones de acción -->
+                <div class="row justify-content-center align-items-center mb-3">
+                  <div class="col-12 d-grid gap-2">
+                    <button type="submit" class="btn btn-success">Pagar Apuesta</button>
+                    <button type="button" class="btn btn-warning">Modificar Evento</button>
+                    <button type="button" class="btn btn-danger">Eliminar Evento</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-
-
-        <div class="video-wrap">
-          <video autoplay="" loop="" muted="" class="custom-video" poster="">
-            <source src="./videos/video.mp4" type="video/mp4" />
-
-            Your browser does not support the video tag.
-          </video>
         </div>
       </section>
-    </main>
+      
+      
+    </main> 
 
     <!-- JAVASCRIPT FILES -->
     <script src="./js/jquery.min.js"></script>
