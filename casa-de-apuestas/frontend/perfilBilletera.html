@@ -186,7 +186,7 @@ Bootstrap 5 Form Pack Template
 
               <button type="submit" class="form-control">Historial de Apuestas</button>
 
-         
+
 
     
             </div>
@@ -211,10 +211,50 @@ Bootstrap 5 Form Pack Template
  
         <div class="row frente">
           <div class="col-lg-6 col-12 mx-auto">
-            <form id="registerForm" class="custom-form" role="form" method="post">
-              <h2 class="hero-title text-center mb-4 pb-2">
-                 Historial de Apuestas
-              </h2> 
+            <div class="container-fluid py-4">
+                <h2 class="text-center mb-4" style="color: var(--white-color);">Historial de Apuestas</h2>
+                
+                <!-- Tabla de Historial -->
+                <div class="table-responsive">
+                  <table class="table table-borderless align-middle" style="background-color: transparent; color: var(--white-color);">
+                    <thead>
+                      <tr style="border-bottom: 2px solid var(--secondary-color);">
+                        <th class="text-center p-3" style="font-family: var(--heading-font-family);">Fecha</th>
+                        <th class="text-center p-3" style="font-family: var(--heading-font-family);">Evento</th>
+                        <th class="text-center p-3" style="font-family: var(--heading-font-family);">Apuesta</th>
+                        <th class="text-center p-3" style="font-family: var(--heading-font-family);">Resultado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Evento Ganado -->
+                      <tr style="border-bottom: 1px solid var(--secondary-color); background-color: rgba(0, 0, 0, 0.3);">
+                        <td class="text-center p-3">15/06/2024</td>
+                        <td class="text-center p-3">Hera vs Sebastian</td>
+                        <td class="text-center p-3">$500</td>
+                        <td class="text-center p-3" style="color: #00ff00; font-weight: var(--font-weight-bold);">+$750</td>
+                      </tr>
+                      
+                      <!-- Evento Perdido -->
+                      <tr style="border-bottom: 1px solid var(--secondary-color);">
+                        <td class="text-center p-3">10/06/2024</td>
+                        <td class="text-center p-3">Hera vs Sebastian</td>
+                        <td class="text-center p-3">$300</td>
+                        <td class="text-center p-3" style="color: var(--secondary-color); font-weight: var(--font-weight-bold);">-$300</td>
+                      </tr>
+                      
+                      <!-- Evento Ganado -->
+                      <tr style="border-bottom: 1px solid var(--secondary-color); background-color: rgba(0, 0, 0, 0.3);">
+                        <td class="text-center p-3">05/06/2024</td>
+                        <td class="text-center p-3">Hera vs Sebastian</td>
+                        <td class="text-center p-3">$200</td>
+                        <td class="text-center p-3" style="color: #00ff00; font-weight: var(--font-weight-bold);">+$300</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              
+            </div>
+
           </div>
         </div>
 
