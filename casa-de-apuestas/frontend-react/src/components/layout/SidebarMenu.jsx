@@ -63,6 +63,9 @@ const SidebarMenu = () => {
                         <NavLink to="/counter" end onClick={handleLinkClick}>
                             Ir al contador
                         </NavLink>
+                        <NavLink to="/counter" end onClick={handleLinkClick}>
+                            Cerrar Secion
+                        </NavLink>
                     </nav>
                 </div>
             </div>
