@@ -67,16 +67,18 @@ Bootstrap 5 Form Pack Template
                     required=""
                   />
 
-                  <label for="email">Ingre el numbre del Usuario</label>
+                  <label for="email">Ingre el email del Usuario</label>
                 </div>
-
-
-
 
                 <div class="row justify-content-center align-items-center">
                   <div class="col-lg-5 col-12">
-                    <button type="submit" class="form-control">Buscar</button>
+                    <button type="submit" onclick="buscarUsuario()" id="buscarUsuarioBtn" class="form-control">Buscar</button>
                   </div>
+                </div>
+
+                  
+                  <!-- Contenedor para mostrar el resultado del usuario -->
+                  <div id="resultadoUsuario" class="mt-4 text-center"></div>
                   
 
                 </div>
@@ -103,6 +105,8 @@ Bootstrap 5 Form Pack Template
     <script src="./js/init.js"></script>
     <script src="./js/cargarHeader.js"></script>
     <script src="./js/login.js"></script>
+    <script src="./js/buscarUsuario.js"></script>
+
 
   </body>
-</html>
+</html> 
