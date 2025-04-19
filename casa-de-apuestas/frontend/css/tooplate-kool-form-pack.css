@@ -246,6 +246,9 @@ strong {
 .custom-btn-group .link:hover {
   color: var(--link-hover-color);
 }
+.btn-rounded {
+  border-radius: 50px;
+}
 
 /*---------------------------------------
   SITE HEADER        
