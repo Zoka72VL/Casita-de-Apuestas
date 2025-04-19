@@ -19,6 +19,7 @@ import Counter from "./components/home/Counter.jsx";
 import App from "./App.jsx";
 import { FinderFruit } from "./components/home/FinderFruit.jsx";
 import CrearEvento from "./components/profiles/admin/CrearEvento.jsx";
+import UserProfile from "./components/profiles/user/UserProfile.jsx";
 
 const PrivateAdminPage = AdminPage;
 const PrivateCasterPage = CasterPage;
@@ -45,6 +46,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="counter" element={<Counter />} />
           <Route path="fruit" element={<FinderFruit />} />
           <Route path="crearevento" element={<CrearEvento />} />
+          <Route path="miperfil" element={<UserProfile />} />
         </Route>
 
         <Route path="admin" element={<AdminPage />}>

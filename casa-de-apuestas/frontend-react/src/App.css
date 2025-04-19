@@ -102,7 +102,6 @@
     display: block;
   }
 
-  /* Mostrar el menú cuando el ícono de la hamburguesa sea activado */
   .site-header.active nav {
     display: flex;
   }
