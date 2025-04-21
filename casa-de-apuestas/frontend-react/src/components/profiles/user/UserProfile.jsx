@@ -1,6 +1,4 @@
 import React from "react";
-import perfilImg from "../../../../public/Image/Perfil zoka.jpg";
-import lcoImg from "../../../../public/Image/LCO_Coin_Final.png";
 
 const UserProfile = () => {
   return (
@@ -10,7 +8,7 @@ const UserProfile = () => {
           <div className="col-lg-6 col-md-8 col-12 mx-auto">
             <form className="custom-form text-center" role="form">
               <img
-                src={perfilImg}
+                src="Image/Perfil zoka.jpg"
                 alt="Perfil"
                 className="img-fluid rounded-circle mb-3"
                 style={{ width: "80px", height: "80px", objectFit: "cover" }}
@@ -21,27 +19,18 @@ const UserProfile = () => {
               <h3 className="hero-title mb-3">Cantidad de Lco</h3>
 
               <div className="d-flex justify-content-center align-items-center mb-4">
-                <div
+                <img
+                  src="Image/LCO_COIN_REOK.png"
+                  alt="Moneda LCO"
+                  className="img-fluid rounded-circle"
                   style={{
                     width: "80px",
                     height: "80px",
-                    overflow: "hidden",
-                    borderRadius: "50%",
-                    display: "inline-block",
                     backgroundColor: "transparent",
+                    boxShadow: "none",
+                    border: "none",
                   }}
-                >
-                  <img
-                    src={lcoImg}
-                    alt="Moneda LCO"
-                    style={{
-                      width: "100%",
-                      height: "102%",
-                      objectFit: "cover",
-                      objectPosition: "72% center", // mueve un poquito a la derecha
-                    }}
-                  />
-                </div>
+                />
 
                 <h4
                   className="mb-0"
