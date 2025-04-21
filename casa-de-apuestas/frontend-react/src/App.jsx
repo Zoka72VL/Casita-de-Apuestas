@@ -7,14 +7,12 @@ import Video from "./components/UI/Video.jsx";
 function App() {
   return (
     <>
-      <Video/>
+      <Video />
       <SidebarMenu />
       <Header />
-      <main>
-        
-        <Outlet/>
+      <main className="">
+        <Outlet />
       </main>
-     
     </>
   );
 }

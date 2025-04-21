@@ -1,10 +1,8 @@
 #root {
   width: 100%;
   margin: 0 auto;
-  padding:0 1rem;
-  margin: 0 auto;
+  padding: 0 1rem;
   text-align: center;
-
 }
 
 .logo {
@@ -13,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -43,83 +43,232 @@
   color: #888;
 }
 
+/* --------------------------- */
+/* HEADER*/
+/* --------------------------- */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  max-height: 80px;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Asegurarse de que el ícono de la hamburguesa esté siempre visible */
+.site-header .hamburger-icon {
+  display: block;
+  cursor: pointer;
+  z-index: 1050; /* Asegúrate de que el ícono esté por encima de otros elementos */
+}
+
+.site-header .home-icon {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .site-header .home-icon {
+    padding-left: 2px;
+    padding-right: 2px;
+    height: auto;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .site-header .social-icon {
+    display: none;
+  }
+
+  .site-header nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    margin-left: auto;
+  }
+
+  /* Mostrar el ícono de la hamburguesa */
+  .site-header .hamburger-icon {
+    display: block;
+  }
+
+  .site-header.active nav {
+    display: flex;
+  }
+
+  .site-header .custom-btn {
+    display: none;
+  }
+}
+
+/* --------------------------- */
+/* NUEVA CLASE CENTRAL CUSTOM */
+/* --------------------------- */
+.container-custom {
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+/* --------------------------- */
+/* CONTENIDO PRINCIPAL */
+/* --------------------------- */
 .contentHome {
   width: 100%;
-   /* Asegura que haya 30px de margen a los lados */
   position: relative;
   z-index: 1;
+  padding-top: 60px;
 }
-/* Hacer que el video ocupe toda la pantalla */
+
+/* --------------------------- */
+/* VIDEO DE FONDO */
+/* --------------------------- */
 #video {
-  position: absolute; /* Para que se posicione libremente en la pantalla */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw; /* 100% del ancho de la pantalla */
-  height: 100vh; /* 100% de la altura de la pantalla */
-  object-fit: cover;/* Esto hace que el video ocupe todo el espacio sin distorsionarse */
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   z-index: -1;
-  pointer-events: none; /* esto es para que no afecte la logica ni componentes que estan encima del video*/
+  pointer-events: none;
 }
 
-.container {
-  max-width: 100%;
-  max-height: 100%;
-  padding: 15px 25px;
-   /* Añadir margen de 30px a los lados */
-}
-
+/* --------------------------- */
+/* BOTONES Y CONTADOR */
+/* --------------------------- */
 .content-counter {
   color: lawngreen;
+  border: 3px solid #ff2121;
+  border-radius: 10px;
   z-index: 1;
+  margin: 2vh;
+  padding: 1vh;
 }
-.section-counter  {
+
+.section-counter {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(16, 16, 16); /* Fondo completamente sólido */
-  position: relative; /* Necesario para los pseudo-elementos */
+  background-color: rgba(21, 14, 23, 0.654);
+  position: relative;
   z-index: 1;
   border-radius: 100px;
   opacity: 0.9;
 }
+
 .buttons-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center; /* Para alinear los botones en fila */
+  justify-content: center;
   gap: 15px;
   border-radius: 100px;
   z-index: 1;
 }
+
 .section-counter-button button {
-  margin: 5px; /* Espacio entre los botones */
-  padding: 10px 20px; /* Espaciado dentro de los botones */
-  border: 2px solid #ccc; /* Borde de los botones */
-  border-radius: 100px; /* Bordes redondeados */
-  cursor:pointer; /* Cambia el cursor cuando pasa sobre el botón */
-  background-color: rgb(14, 145, 47);
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px 20px;
+  border: 3px solid #ff2121;
+  border-radius: 100px;
+  cursor: pointer;
   z-index: 1;
 }
-/* Animación de deslizamiento hacia la derecha */
-/* Animación de apertura y cierre del offcanvas */
+
+/* --------------------------- */
+/* OFFCANVAS ANIMACIONES */
+/* --------------------------- */
 .offcanvas-end {
-  transition: transform 0.3s ease-in-out; /* Aseguramos que la animación dure 300ms */
+  transition: transform 0.3s ease-in-out;
 }
-/* Esta clase se activará al hacer clic en una opción del menú */
+
 .offcanvas-close {
-  transition: transform 0.3s ease-in-out;  /* Aplicamos el mismo tiempo para el cierre */
-  transform: translateX(100%); 
+  animation: fadeOutRight 0.4s ease-in-out forwards;
 }
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
 .offcanvas-header {
   padding-top: 30px;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 30px;
-
 }
 
+/* --------------------------- */
+/* RESPONSIVO MOVIL */
+/* --------------------------- */
+@media (max-width: 768px) {
+  .container-custom {
+    padding: 10px;
+    max-width: 100%;
+  }
 
-/* padding-top: 45px;
-padding-bottom: 45px;
-padding-right: 25px;
-padding-left: 25px */
+  .contentHome h1,
+  .contentHome h2 {
+    font-size: 1.5rem;
+  }
+
+  .buttons-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section-counter {
+    border-radius: 20px;
+    padding: 1rem;
+  }
+
+  .section-counter-button button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .container-custom {
+    padding: 1rem;
+  }
+
+  .custom-form .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .form-floating {
+    width: 100%;
+  }
+
+  .form-check-label {
+    font-size: 0.9rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+}

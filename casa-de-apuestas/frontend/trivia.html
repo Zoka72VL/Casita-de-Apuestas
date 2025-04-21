@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Casa de Apuestas de la Clandestinidad</title>
+    <title>La Clandestinidad del AGE</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +24,6 @@
     <link href="./css/bootstrap-icons.css" rel="stylesheet" />
 
     <link href="./css/tooplate-kool-form-pack.css" rel="stylesheet" />
-
     <!--
 
 Tooplate 2136 Kool Form Pack
@@ -36,7 +35,7 @@ Bootstrap 5 Form Pack Template
 -->
   </head>
 
-  <body>
+ <body>
     <main>
       <div id="header-container"></div>
 
@@ -56,18 +55,7 @@ Bootstrap 5 Form Pack Template
           ></button>
         </div>
 
-        <div
-          class="offcanvas-body d-flex flex-column justify-content-center align-items-center"
-        >
-          <nav>
-            <ul>
-              <div id="barra-container">
 
-              </div>
-            </ul>
-          </nav>
-        </div>
-      </div>
 
       <!-- Modal -->
       <div
@@ -78,22 +66,52 @@ Bootstrap 5 Form Pack Template
         aria-hidden="true"
       >
 
+        </div>
       </div>
-
+      <div id="header-container"></div>
       <section
         class="hero-section d-flex justify-content-center align-items-center"
-        id="section_1"
       >
+        <div class="container">
+          <div class="row frente">
+            <div class="col-lg-5 col-12 mx-auto">
+              <form class="custom-form login-form" role="form" method="post">
+                <h2 class="hero-title text-center mb-4 pb-2">Trivia</h2>
 
+                <h3 class="hero-title text-center mb-4 pb-2">¿Pregunta, aca esta la pregunta?</h3>
+                <div class="col-lg-12 col-12">
+                  <div class="form-floating p-0">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="form-control"
+                      placeholder="Password"
+                      required="true"
+                    />
+
+                    <label for="password">Ingresa tu respuesta</label>
+
+                        <button type="submit" class="form-control">Enviar Respuesta</button>
+                    
+
+
+                  </div>
+               
+               
+                
+               
+                
+
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
 
         <div class="video-wrap">
-          <video
-            autoplay=""
-            loop=""
-            muted="false"
-            class="custom-video"
-            poster=""
-          >
+          <video autoplay="" loop="" muted="" class="custom-video" poster="">
             <source src="./videos/video.mp4" type="video/mp4" />
 
             Your browser does not support the video tag.
@@ -103,11 +121,13 @@ Bootstrap 5 Form Pack Template
     </main>
 
     <!-- JAVASCRIPT FILES -->
+    <!-- <script src="./js/jcomponentheader.js"></script> -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/countdown.js"></script>
     <script src="./js/init.js"></script>
-    <script src="./js/cargarHeader.js"></script>    
-    <script src="./js/cargarBarra.js"></script>
+    <script src="./js/cargarHeader.js"></script>
+    <script src="./js/login.js"></script>
+
   </body>
 </html>

@@ -39,51 +39,6 @@ Bootstrap 5 Form Pack Template
     <main>
       <div id="header-container"></div>
 
-      <div
-        class="offcanvas offcanvas-end"
-        data-bs-scroll="true"
-        tabindex="-1"
-        id="offcanvasMenu"
-        aria-labelledby="offcanvasMenuLabel"
-      >
-        <div class="offcanvas-header">
-          <button
-            type="button"
-            class="btn-close ms-auto"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-
-        <div
-          class="offcanvas-body d-flex flex-column justify-content-center align-items-center"
-        >
-          <nav>
-            <ul>
-              <li>
-                <a href="login.html">Login Form</a>
-              </li>
-
-              <li>
-                <a class="active" href="register.html">Create an account</a>
-              </li>
-
-              <li>
-                <a href="password-reset.html">Password Reset</a>
-              </li>
-
-              <li>
-                <a href="404.html">404 Page</a>
-              </li>
-
-              <li>
-                <a href="contact.html">Contact Form</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-
       <!-- Modal -->
       <div
         class="modal fade"
@@ -102,6 +57,8 @@ Bootstrap 5 Form Pack Template
                 aria-label="Close"
               ></button>
             </div>
+
+
 
             <div class="modal-body">
               <form
@@ -135,76 +92,74 @@ Bootstrap 5 Form Pack Template
         </div>
       </div>
 
-      <section
-        class="hero-section d-flex justify-content-center align-items-center">
+      <section class="hero-section d-flex justify-content-center align-items-center">
         <div class="container">
+        <div class="row-frente">
+          <h3 class="text-white text-center mt-2 mb-4 pb-2 fs-1 fs-sm-3">
+            Eventos Para Apostar
+          </h3>
+      
           <div class="row frente">
             <div class="col-lg-6 col-12 mx-auto">
-              <form id="registerForm" class="custom-form" role="form" method="post">
-                <div class="tituloUsuario"> 
-                    <div>
-                        <h2 class="hero-title text-center mb-4 pb-2">
-                          Usuario </h2>
-                    </div>
-                    <div class="iconoUsuario"> <img src="./images/KICK ICON.jpg"> </div>
+              <h2 class="text-white text-center mt-2 mb-4 fs-1 fs-sm-3">
+                Nombre del Evento
+              </h2>
+      
+              <form id="registerForm" class="custom-form" method="post">
+                <!-- Selección de Jugador -->
+                <div class="row justify-content-center align-items-center mb-4 text-center">
+                  <input type="radio" class="btn-check" name="jugador" id="jugadorAzul" value="azul" required />
+                  <label class="btn btn-outline-primary col-5 mx-1" for="jugadorAzul">
+                    Nombre del Jugador COLOR AZUL
+                  </label>
+      
+                  <input type="radio" class="btn-check" name="jugador" id="jugadorRojo" value="rojo" required />
+                  <label class="btn btn-outline-danger col-5 mx-1" for="jugadorRojo">
+                    Nombre del Jugador COLOR ROJO
+                  </label>
                 </div>
-                
-                        
-              
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-12">
-
-                    <div class="form-floating">                     
-                      <input
-                        type="text"
-                        name="full-name"
-                        id="full-name"
-                        class="form-control"
-                        placeholder="Full Name"
-                        required="true"
-                      />
-
-                      <label for="floatingInput"> $500000</label>
-                    </div>
+      
+                <!-- LCO apostadas y porcentajes -->
+                <div class="row mb-4 text-white text-center">
+                  <div class="col-6">
+                    <h3>LCO APOSTADAS: 150</h3>
+                    <p>Porcentaje: 60%</p>
                   </div>
-
-                                       >
-                  <div class="col-lg-6 col-md-6 col-12">
-                    <div class="form-floating mb-4 p-0">
-                      <input
-                        type="email"
-                        name="email"
-                        id="emailReg"
-                        pattern="[^ @]*@[^ @]*"
-                        class="form-control"
-                        placeholder="Email address"
-                        required="true"
-                      />
-
-                      <label for="email">Donde se ven las apuestas </label>
-                    </div>
+                  <div class="col-6">
+                    <h3>LCO APOSTADAS: 100</h3>
+                    <p>Porcentaje: 40%</p>
                   </div>
-
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12">
-
-                    </div>
-
+                </div>
+      
+                <!-- Ingreso de cantidad -->
+                <div class="form-floating mb-4">
+                  <input
+                    type="number"
+                    name="lco"
+                    id="lco"
+                    class="form-control"
+                    placeholder="Cantidad de LCO"
+                    min="1"
+                    required
+                  />
+                  <label for="lco">Ingresa la cantidad de LCO</label>
+                </div>
+      
+                <!-- Botones de acción -->
+                <div class="row justify-content-center align-items-center mb-3">
+                  <div class="col-12 d-grid gap-2">
+                    <button type="submit" class="btn btn-success btn-rounded">Pagar Apuesta</button>
+                    <button type="button" class="btn btn-warning btn-rounded">Modificar Evento</button>
+                    <button type="button" class="btn btn-danger btn-rounded">Eliminar Evento</button>
                   </div>
-
-                  <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-5 col-md-5 col-5 ms-auto">
-                      <button type="submit" class="form-control">Confirmar Evento</button>
-                    </div>
-
-
-                  </div>
+                </div>
                 </div>
               </form>
             </div>
           </div>
         </div>
-
+        
+        </div>
         <div class="video-wrap">
           <video autoplay="" loop="" muted="" class="custom-video" poster="">
             <source src="./videos/video.mp4" type="video/mp4" />
@@ -213,7 +168,9 @@ Bootstrap 5 Form Pack Template
           </video>
         </div>
       </section>
-    </main>
+      
+      
+    </main> 
 
     <!-- JAVASCRIPT FILES -->
     <script src="./js/jquery.min.js"></script>

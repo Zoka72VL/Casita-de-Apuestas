@@ -1,11 +1,7 @@
-
 const Content = () => {
   return (
-      <>
-      <content
-        className="contentHome"
-        id="contentHome"
-      >
+    <>
+      <section className="contentHome" id="contentHome">
         <div className="container">
           <div className="row frente">
             <div className="col-lg-5 col-12 mx-auto">
@@ -27,7 +23,7 @@ const Content = () => {
             </div>
           </div>
         </div>
-      </content>
+      </section>
     </>
   );
 };

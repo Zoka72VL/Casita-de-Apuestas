@@ -1,12 +1,11 @@
-import App from "../App";
+import Content from "../components/layout/Content";
 
-
-const HomePage = () =>{
-    return (
-        <>
-            <App/>
-        </>
-    );
+const HomePage = () => {
+  return (
+    <>
+      <Content />
+    </>
+  );
 };
 
 export default HomePage;
