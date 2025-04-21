@@ -1,6 +1,9 @@
-from backend.models.BaseModel import iniciar_sistema
 from backend.Routes import app
+from backend.models.BaseModel import setup_db
 
 if __name__ == "__main__":
-    iniciar_sistema()  # Inicializar la base de datos antes de correr Flask
-    app.run(debug=True, host="0.0.0.0")
+    # Inicializar base de datos antes de arrancar la aplicación
+    setup_db()
+    
+    # Ejecutar servidor Flask
+    app.run(debug=True, host='0.0.0.0', port=5000)
