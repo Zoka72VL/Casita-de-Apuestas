@@ -56,39 +56,54 @@ Bootstrap 5 Form Pack Template
               <form class="custom-form login-form" role="form" method="post">
                 <h2 class="hero-title text-center mb-4 pb-2">Crea tu Trivia</h2>
 
+
+
                 <div class="form-floating mb-4 p-0">
                   <input
-                    type="email"
-                    name="email"
-                    id="emailUser"
+                    type="trivaPregunta"
+                    name="triviaPregunta"
+                    id="triviaPregunta"
                     pattern="[^ @]*@[^ @]*"
                     class="form-control"
-                    placeholder="Email address"
+                    placeholder="Pregunta Trivia"
                     required=""
                   />
-
-                  <label for="email">Pregunta</label>
+                  <label for="trivia">Pregunta</label>
                 </div>
+
                 <div class="form-floating mb-4 p-0">
                   <input
-                    type="email"
-                    name="email"
-                    id="emailUser"
+                    type="triviaRespuesta"
+                    name="triviaRespuesta"
+                    id="triviaRespuesta"
                     pattern="[^ @]*@[^ @]*"
                     class="form-control"
-                    placeholder="Email address"
+                    placeholder="Respuesta Trivia"  
                     required=""
                   />
-
-                  <label for="email">Respuesta</label>
+                  <label for="triviaRespuesta">Respuesta</label>
                 </div>
-
+                  <div class="form-floating mb-4 p-0">
+                    <input
+                      type="trivaPrice"
+                      name="triviaPrice"
+                      id="triviaPrice"
+                      pattern="[^ @]*@[^ @]*"
+                      class="form-control"
+                      placeholder="Pregunta Price"
+                      required=""
+                    />
+                    <label for="trivia">cantidad de LCO</label>
+                  </div>
 
 
                 <div class="row justify-content-center align-items-center">
                   <div class="col-lg-5 col-12">
                     <button type="submit" class="form-control">Crear</button>
                   </div>
+
+
+
 
 
                 </div>
