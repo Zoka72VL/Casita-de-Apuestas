@@ -1,5 +1,5 @@
 import jwt as pyjwt
-from datetime import datetime
+from datetime import datetime, timedelta
 from functools import wraps
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
@@ -87,7 +87,7 @@ def login():
             
             token = pyjwt.encode({
                 "user_id": user.id,
-                "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=1)
+                "exp": datetime.utcnow() + timedelta(hours=1)
             }, app.config['SECRET_KEY'], algorithm="HS256")
 
             billetera = Billetera.get_or_none(Billetera.usuario == user)

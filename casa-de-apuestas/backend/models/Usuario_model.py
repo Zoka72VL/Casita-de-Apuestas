@@ -2,6 +2,7 @@ import bcrypt
 from peewee import CharField, DateTimeField, AutoField, ForeignKeyField
 from datetime import datetime
 from backend.models.BaseModel import BaseModel
+from backend.models.RolModel import Rol  # Importación diferida para evitar ciclos de importación
 
 
 class Usuario(BaseModel):
@@ -10,12 +11,13 @@ class Usuario(BaseModel):
     email = CharField(unique=True, max_length=100)
     password = CharField(max_length=255)  # Ahora soporta contraseñas hash más largas
     fecha_registro = DateTimeField(default=datetime.now)
-    role = ForeignKeyField('self', backref="users")  # Se importa diferidamente
+    role = ForeignKeyField(Rol, backref="usuarios")
+    
 
 # Función para registrar un nuevo usuario con hash de contraseña
 def registrar_usuario(nombre, email, password, role_name="usuario"):
     try:
-        from backend.models.RolesPermisos import Rol  # Importación diferida
+        from backend.models.RolModel import Rol  # Importación diferida
         from backend.models.Billetera import Billetera
         if Usuario.select().where(Usuario.email == email).exists():
             return {"success": False, "message": "El email ya está registrado"}
