@@ -2,7 +2,7 @@ import bcrypt
 from peewee import CharField, DateTimeField, AutoField, ForeignKeyField
 from datetime import datetime
 from backend.models.BaseModel import BaseModel
-from backend.models.Billetera import Billetera
+
 
 class Usuario(BaseModel):
     id = AutoField()  # ID autoincremental
@@ -16,7 +16,7 @@ class Usuario(BaseModel):
 def registrar_usuario(nombre, email, password, role_name="usuario"):
     try:
         from backend.models.RolesPermisos import Rol  # Importación diferida
-
+        from backend.models.Billetera import Billetera
         if Usuario.select().where(Usuario.email == email).exists():
             return {"success": False, "message": "El email ya está registrado"}
 
@@ -46,6 +46,7 @@ def registrar_usuario(nombre, email, password, role_name="usuario"):
     
 # Función para verificar credenciales de usuario
 def verificar_usuario(email, password):
+    from backend.models.Billetera import Billetera
     try:
         usuario = Usuario.get(Usuario.email == email)
         

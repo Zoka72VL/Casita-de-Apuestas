@@ -30,7 +30,8 @@ class Billetera(BaseModel):
 
 # Modelo de Apuesta
 class Apuesta(BaseModel):
-    usuario = ForeignKeyField('Usuario', backref='apuestas', on_delete="CASCADE")  # Se cambia 'Usuario' por string
+    from backend.models.Usuario_model import Usuario  # Agrega esto arriba de la clase Apuesta
+    usuario = ForeignKeyField(Usuario, backref='apuestas', on_delete="CASCADE")
     evento = ForeignKeyField(Evento, backref='apuestas', on_delete="CASCADE")
     opcion = CharField(max_length=1)  # "A" o "B"
     cantidad = FloatField()
