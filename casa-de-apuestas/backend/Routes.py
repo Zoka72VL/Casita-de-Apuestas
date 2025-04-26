@@ -8,6 +8,7 @@ from backend.models.Usuario_model import Usuario, registrar_usuario, verificar_u
 from backend.models.RolesPermisos import tiene_permiso
 from backend.models.Evento import Evento
 from backend.models.Billetera import Billetera
+from backend.services.apuesta_service import ApuestaService
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'clave_secreta_segura'
@@ -127,39 +128,33 @@ def get_users():
 def apostar():
     if not tiene_permiso(request.user, "apostar"):
         return jsonify({"success": False, "message": "No tienes permiso"}), 403
-    
+
     try:
         data = request.get_json()
         evento_id = data.get("evento_id")
-        opcion = data.get("opcion")  # Debe ser "A" o "B"
+        opcion = data.get("opcion")
         monto = data.get("monto")
-        
+
         if not evento_id or not opcion or not monto:
             return jsonify({"success": False, "message": "Faltan datos obligatorios"}), 400
-        
-        if opcion not in ["A", "B"]:
-            return jsonify({"success": False, "message": "Opción inválida, elige 'A' o 'B'"}), 400
-        
-        # Verificar si el evento existe
-        evento = Evento.get_or_none(Evento.id == evento_id)
-        if not evento:
-            return jsonify({"success": False, "message": "El evento no existe"}), 404
-        
-        # Verificar saldo del usuario
-        billetera = Billetera.get_or_none(Billetera.usuario == request.user)
-        if not billetera or billetera.saldo < monto:
-            return jsonify({"success": False, "message": "Saldo insuficiente"}), 400
-        
-        # Registrar la apuesta
-        apuesta = Billetera.realizar_apuesta(request.user, evento, opcion, monto)
-        
-        return jsonify({"success": True, "message": "Apuesta realizada con éxito", "apuesta": {
-            "evento_id": evento.id,
-            "opcion": opcion,
-            "monto": monto,
-            "usuario": request.user.id
-        }})
+
+        apuesta = ApuestaService.apostar(request.user.id, evento_id, opcion, monto)
+
+        return jsonify({
+            "success": True,
+            "message": "Apuesta realizada con éxito",
+            "apuesta": {
+                "evento_id": apuesta.evento.id,
+                "opcion": apuesta.opcion,
+                "monto": apuesta.cantidad,
+                "usuario": apuesta.usuario.id
+            }
+        })
+
+    except ValueError as ve:
+        return jsonify({"success": False, "message": str(ve)}), 400
     except Exception as e:
+        logging.exception("Error inesperado al apostar")
         return jsonify({"success": False, "message": "Error al realizar la apuesta", "error": str(e)}), 500
 
 @app.route('/admin/crearEvento', methods=['POST'])
@@ -198,7 +193,7 @@ def crear_evento():
                 "nombre": evento.nombre,
                 "opcion_a": evento.opcion_a,
                 "opcion_b": evento.opcion_b,
-                "fecha_evento": evento.fecha_evento.strftime('%Y-%m-%d %H:%M:%S'),
+                "fecha_evento": evento.fecha.strftime('%Y-%m-%d %H:%M:%S'),
                 "creado_por": evento.creado_por.id,
                 "estado": evento.estado
             }

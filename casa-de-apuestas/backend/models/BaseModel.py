@@ -10,10 +10,12 @@ class BaseModel(Model):
 # Inicialización de la base de datos
 def inicializar_base_de_datos():
     # Importaciones diferidas para evitar importación circular
-    from backend.models.RolesPermisos import Rol, Permiso, RolPermiso
+    from backend.models.RolesPermisos import Permiso, RolPermiso
     from backend.models.Usuario_model import Usuario
-    from backend.models.Billetera import Billetera, Apuesta
+    from backend.models.Billetera import Billetera
+    from backend.models.Apuesta import Apuesta
     from backend.models.Evento import Evento
+    from backend.models.RolModel import Rol
     
     db.connect()
     db.create_tables([Rol, Permiso, RolPermiso, Usuario, Billetera, Evento, Apuesta], safe=True)
