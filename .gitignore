@@ -1,21 +1,23 @@
 # Python compiled files
 *.pyc
+*.pyo
+*.pyd
 __pycache__/
 
-# SQLite databases
+# Database files
 *.db
 
-# Node.js files (por si acaso)
-package-lock.json
-node_modules/
-
-# Environment
+# Env variables
 .env
 *.env
 
-# MacOS/Windows system files
-.DS_Store
-Thumbs.db
+# Node
+node_modules/
+package-lock.json
 
 # Backups
 *.zip
+
+# System files
+.DS_Store
+Thumbs.db
