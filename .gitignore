@@ -1,0 +1,21 @@
+# Python compiled files
+*.pyc
+__pycache__/
+
+# SQLite databases
+*.db
+
+# Node.js files (por si acaso)
+package-lock.json
+node_modules/
+
+# Environment
+.env
+*.env
+
+# MacOS/Windows system files
+.DS_Store
+Thumbs.db
+
+# Backups
+*.zip
