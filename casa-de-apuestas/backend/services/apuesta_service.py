@@ -1,10 +1,11 @@
 from datetime import datetime
 from peewee import DoesNotExist
-from backend.models.Usuario_model import Usuario
+
+from backend.models.Usuario import Usuario
 from backend.models.Evento import Evento
 from backend.models.Billetera import Billetera
 from backend.models.Apuesta import Apuesta
-from backend.models.BaseModel import db  # tu conexión a la base de datos
+from backend.models.BaseModel import db  # para manejar transacciones
 
 class ApuestaService:
 
@@ -23,14 +24,15 @@ class ApuestaService:
         except DoesNotExist:
             raise ValueError("Evento no encontrado.")
 
-        #if evento.estado != "activo":
-        #    raise ValueError("El evento no está activo.")
-        #if evento.fecha < datetime.now():
-        #    raise ValueError("El evento ya ha finalizado.")
+        if evento.estado != "activo":
+            raise ValueError("El evento no está activo.")
+        if evento.fecha < datetime.now():
+            raise ValueError("El evento ya ha finalizado.")
 
         billetera = Billetera.get_or_none(Billetera.usuario == usuario)
         if not billetera:
             raise ValueError("El usuario no tiene una billetera registrada.")
+
         if billetera.saldo < cantidad:
             raise ValueError("Fondos insuficientes.")
 
