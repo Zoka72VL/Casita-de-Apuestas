@@ -1,0 +1,23 @@
+# Python compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Database files
+*.db
+
+# Env variables
+.env
+*.env
+
+# Node
+node_modules/
+package-lock.json
+
+# Backups
+*.zip
+
+# System files
+.DS_Store
+Thumbs.db

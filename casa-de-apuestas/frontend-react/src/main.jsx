@@ -20,6 +20,10 @@ import App from "./App.jsx";
 import { FinderFruit } from "./components/home/FinderFruit.jsx";
 import CrearEvento from "./components/profiles/admin/CrearEvento.jsx";
 import UserProfile from "./components/profiles/user/UserProfile.jsx";
+import ResponderTrivia from "./components/profiles/admin/ResponderTrivia.jsx";
+import CrearTrivia from "./components/profiles/admin/CrearTrivia.jsx";
+import BuscarUsuario from "./components/profiles/admin/BuscarUsuario.jsx";
+
 
 const PrivateAdminPage = AdminPage;
 const PrivateCasterPage = CasterPage;
@@ -47,6 +51,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="fruit" element={<FinderFruit />} />
           <Route path="crearevento" element={<CrearEvento />} />
           <Route path="miperfil" element={<UserProfile />} />
+          <Route path="respondertrivia" element={<ResponderTrivia />} />
+          <Route path="creartrivia" element={<CrearTrivia />} />
+          <Route path="buscarusuario" element={<BuscarUsuario />} />
         </Route>
 
         <Route path="admin" element={<AdminPage />}>
