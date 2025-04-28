@@ -1,12 +1,11 @@
-const Events = () => {
-    return ( 
-        <>
-            <h1>
-                Soy el evento
-            </h1>
-        
-        </>
-     );
-}
+import ContadorEfecto from "./ContadorEfecto";
 
-export default Events ;
+const Events = () => {
+  return (
+    <>
+      <ContadorEfecto />
+    </>
+  );
+};
+
+export default Events;
