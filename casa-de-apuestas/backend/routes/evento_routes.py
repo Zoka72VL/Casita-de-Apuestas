@@ -10,15 +10,15 @@ evento_bp = Blueprint('evento', __name__)
 @token_requerido
 @cross_origin()
 def crear_evento():
-    #if not PermisoService.tiene_permiso(request.user, "crear_evento"):
-    #    return jsonify({"success": False, "message": "No tienes permiso para crear eventos"}), 403
+    if not PermisoService.tiene_permiso(request.user, "crear_evento"):
+        return jsonify({"success": False, "message": "No tienes permiso para crear eventos"}), 403
 
     data = request.get_json()
     nombre = data.get("nombre")
     opcion_a = data.get("opcion_a")
     opcion_b = data.get("opcion_b")
     fecha_evento = data.get("fecha_evento")
-    estado = data.get("estado", "pendiente")
+    estado = data.get("estado", "activo")
 
     if not nombre or not opcion_a or not opcion_b or not fecha_evento:
         return jsonify({"success": False, "message": "Faltan datos obligatorios"}), 400
@@ -37,6 +37,29 @@ def crear_evento():
                 "estado": evento.estado,
                 "creado_por": evento.creado_por.id
             }
+        })
+    except Exception as e:
+        return jsonify({"success": False, "message": str(e)}), 400
+
+@evento_bp.route('/admin/terminarEvento', methods=['POST'])
+@token_requerido
+@cross_origin()
+def terminar_evento():
+    if not PermisoService.tiene_permiso(request.user, "crear_evento"):
+        return jsonify({"success": False, "message": "No tienes permiso para terminar eventos"}), 403
+
+    data = request.get_json()
+    evento_id = data.get("evento_id")
+    opcion_ganadora = data.get("opcion_ganadora")
+
+    if not evento_id or not opcion_ganadora:
+        return jsonify({"success": False, "message": "Faltan datos obligatorios"}), 400
+
+    try:
+        resultado = EventoService.terminar_evento(evento_id, opcion_ganadora)
+        return jsonify({
+            "success": True,
+            "message": resultado.get("message", "Evento terminado")
         })
     except Exception as e:
         return jsonify({"success": False, "message": str(e)}), 400
