@@ -67,11 +67,15 @@ const Eventos = () => {
                     <button type="button" class="btn btn-warning">Modificar Evento</button>
                     <button type="button" class="btn btn-danger">Eliminar Evento</button>
                   </div>
+                
+                                    <a class="custom-btn btn mt-4" href="index.html">Volver al inicio</a>
+
                 </div>
               </form>
             </div>
           </div>
         </div>
+
         
         </div>
         <div class="video-wrap">
