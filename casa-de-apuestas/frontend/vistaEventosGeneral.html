@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Casa de apuestas</title>
+    <title>La Clandestinidad del AGE</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,9 +35,54 @@ Bootstrap 5 Form Pack Template
 -->
   </head>
 
-  <body>
+ <body>
     <main>
       <div id="header-container"></div>
+
+      <div
+        class="offcanvas offcanvas-end"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasMenu"
+        aria-labelledby="offcanvasMenuLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close ms-auto"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div
+          class="offcanvas-body d-flex flex-column justify-content-center align-items-center"
+        >
+          <nav>
+            <ul>
+              <li>
+                <a href="login.html">Login Form</a>
+              </li>
+
+              <li>
+                <a href="register.html">Create an account</a>
+              </li>
+
+              <li>
+                <a class="active" href="password-reset.html">Password Reset</a>
+              </li>
+
+              <li>
+                <a href="404.html">404 Page</a>
+              </li>
+
+              <li>
+                <a href="contact.html">Contact Form</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
       <!-- Modal -->
       <div
@@ -57,8 +102,6 @@ Bootstrap 5 Form Pack Template
                 aria-label="Close"
               ></button>
             </div>
-
-
 
             <div class="modal-body">
               <form
@@ -92,6 +135,9 @@ Bootstrap 5 Form Pack Template
         </div>
       </div>
 
+        </div>
+      </div>
+      <div id="header-container"></div>
       <section class="hero-section d-flex justify-content-center align-items-center">
         <div class="container">
         <div class="row-frente">
@@ -109,12 +155,12 @@ Bootstrap 5 Form Pack Template
                 <!-- Selección de Jugador -->
                 <div class="row justify-content-center align-items-center mb-4 text-center">
                   <input type="radio" class="btn-check" name="jugador" id="jugadorAzul" value="azul" required />
-                  <label class="btn btn-outline-primary col-5 mx-1" for="jugadorAzul">
+                 <label class="btnJugadorAzul">
                     Nombre del Jugador COLOR AZUL
                   </label>
       
                   <input type="radio" class="btn-check" name="jugador" id="jugadorRojo" value="rojo" required />
-                  <label class="btn btn-outline-danger col-5 mx-1" for="jugadorRojo">
+                  <label class="btnJugadorRojo">
                     Nombre del Jugador COLOR ROJO
                   </label>
                 </div>
@@ -148,11 +194,13 @@ Bootstrap 5 Form Pack Template
                 <!-- Botones de acción -->
                 <div class="row justify-content-center align-items-center mb-3">
                   <div class="col-12 d-grid gap-2">
-                    <button type="submit" class="btn btn-success btn-rounded">Pagar Apuesta</button>
-                    <button type="button" class="btn btn-warning btn-rounded">Modificar Evento</button>
-                    <button type="button" class="btn btn-danger btn-rounded">Eliminar Evento</button>
+                    <button type="submit" class="btn btn-success">Apostar</button>
                   </div>
-                </div>
+                <div class="row justify-content-center align-items-center mb-3">
+                    <button type="submit" class="btn btn-success">Pagar Apuesta</button>
+                    <button type="button" class="btn btn-warning">Modificar Evento</button>
+                    <button type="button" class="btn btn-danger">Eliminar Evento</button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -161,23 +209,23 @@ Bootstrap 5 Form Pack Template
         
         </div>
         <div class="video-wrap">
-          <video autoplay="" loop="" muted="" class="custom-video" poster="">
-            <source src="./videos/video.mp4" type="video/mp4" />
-
-            Your browser does not support the video tag.
-          </video>
-        </div>
+            <video autoplay="" loop="" muted="" class="custom-video" poster="">
+              <source src="./videos/video.mp4" type="video/mp4" />
+  
+              Your browser does not support the video tag.
+            </video>
+          </div>
       </section>
-      
-      
-    </main> 
+    </main>
 
     <!-- JAVASCRIPT FILES -->
+    <!-- <script src="./js/jcomponentheader.js"></script> -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/countdown.js"></script>
     <script src="./js/init.js"></script>
     <script src="./js/cargarHeader.js"></script>
-    <script src="./js/register.js"></script>
+    <script src="./js/login.js"></script>
+
   </body>
 </html>

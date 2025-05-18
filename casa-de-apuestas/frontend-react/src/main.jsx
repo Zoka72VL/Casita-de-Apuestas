@@ -55,6 +55,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="creartrivia" element={<CrearTrivia />} />
           <Route path="buscarusuario" element={<BuscarUsuario />} />
           <Route path="restablecerpassword" element={<RestablecerPassword />} />
+          <Route path="eventosgeneral" element={<Eventos />} />
+
         </Route>
 
         <Route path="admin" element={<AdminPage />}>
