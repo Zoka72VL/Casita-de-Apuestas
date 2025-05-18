@@ -535,7 +535,7 @@ strong {
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-bold);
   transition: all 0.3s;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   padding-left: 10px;
 }
 .custom-form-button-azul[type="submit"] {
