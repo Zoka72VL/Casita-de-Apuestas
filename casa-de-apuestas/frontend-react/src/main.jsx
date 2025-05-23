@@ -24,6 +24,8 @@ import ResponderTrivia from "./components/profiles/admin/ResponderTrivia.jsx";
 import CrearTrivia from "./components/profiles/admin/CrearTrivia.jsx";
 import BuscarUsuario from "./components/profiles/admin/BuscarUsuario.jsx";
 import RestablecerPassword from "./components/profiles/admin/RestablecerPassword.jsx";
+import Eventos from "./components/profiles/admin/Eventos.jsx";
+
 
 const PrivateAdminPage = AdminPage;
 const PrivateCasterPage = CasterPage;
@@ -55,7 +57,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="creartrivia" element={<CrearTrivia />} />
           <Route path="buscarusuario" element={<BuscarUsuario />} />
           <Route path="restablecerpassword" element={<RestablecerPassword />} />
-          <Route path="eventosgeneral" element={<Eventos />} />
+          <Route path="eventos" element={<Eventos />} />
+          <Route path="crearevento" element={<CrearEvento />} />
+
 
         </Route>
 
