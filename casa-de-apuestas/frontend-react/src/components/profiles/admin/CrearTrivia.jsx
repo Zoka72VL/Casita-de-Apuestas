@@ -66,7 +66,7 @@ const CrearTrivia = () => {
 
                     <div className="row justify-content-center align-items-center">
                     <div className="col-lg-5 col-12">
-                        <button type="submit" className="form-control">Crear</button>
+                        <button type="submit" className="form-control">Crear Trivia</button>
                     </div>
 
 
