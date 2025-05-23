@@ -32,38 +32,36 @@ const CrearEvento = () => {
                           </div>
 
                             <div className="row align-items-center mb-4">
-                              <div className="col-5">
-                                <div className="form-floating">
-                                  <input
-                                    type="email"
-                                    name="playerAzul"
-                                    id="playerAzul"
-                                    pattern="[^ @]*@[^ @]*"
-                                    className="form-control"
-                                    placeholder="Email address"
-                                    required
-                                  />
-                                  <label htmlFor="playerAzul">Player Azul</label>
-                                </div>
-                              </div>
-                              <div className="col-2 text-center">
-                                <h2 className="hero-title mb-0">VS</h2>
-                              </div>
-                              <div className="col-5">
-                                <div className="form-floating">
-                                  <input
-                                    type="email"
-                                    name="playerRojo"
-                                    id="playerRojo"
-                                    pattern="[^ @]*@[^ @]*"
-                                    className="form-control"
-                                    placeholder="Email address"
-                                    required
-                                  />
-                                  <label htmlFor="playerRojo">Player Rojo</label>
-                                </div>
-                              </div>
-                            </div>                          
+  <div className="col-5">
+    <div className="form-floating">
+      <input
+        type="text"
+        name="playerAzul"
+        id="playerAzul"
+        className="form-control"
+        placeholder="Nombre jugador azul"
+        required
+      />
+      <label htmlFor="playerAzul">Player Azul</label>
+    </div>
+  </div>
+  <div className="col-2 text-center">
+    <h2 className="hero-title mb-0">VS</h2>
+  </div>
+  <div className="col-5">
+    <div className="form-floating">
+      <input
+        type="text"
+        name="playerRojo"
+        id="playerRojo"
+        className="form-control"
+        placeholder="Nombre jugador rojo"
+        required
+      />
+      <label htmlFor="playerRojo">Player Rojo</label>
+    </div>
+  </div>
+</div>                  
 
 
                               <div className="row mb-4">

@@ -50,6 +50,18 @@ const CrearTrivia = () => {
                         />
                         <label for="trivia">cantidad de LCO</label>
                     </div>
+                                        <div className="form-floating mb-4 p-0">
+                        <input
+                        type="number"
+                        name="triviaPrice"
+                        id="triviaPrice"
+                        pattern="[^ @]*@[^ @]*"
+                        className="form-control"
+                        placeholder="Pregunta Price"
+                        required=""
+                        />
+                        <label for="trivia">cantidad de Ganadores</label>
+                    </div>
 
 
                     <div className="row justify-content-center align-items-center">
@@ -62,7 +74,7 @@ const CrearTrivia = () => {
 
 
                     </div>
-              </form>
+          </form>
 
           </div>
         </div>
