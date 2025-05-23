@@ -25,6 +25,7 @@ import CrearTrivia from "./components/profiles/admin/CrearTrivia.jsx";
 import BuscarUsuario from "./components/profiles/admin/BuscarUsuario.jsx";
 import RestablecerPassword from "./components/profiles/admin/RestablecerPassword.jsx";
 import Eventos from "./components/profiles/admin/Eventos.jsx";
+import Dashboar from "./components/profiles/admin/Dashboar.jsx";
 
 
 const PrivateAdminPage = AdminPage;
@@ -59,6 +60,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="restablecerpassword" element={<RestablecerPassword />} />
           <Route path="eventos" element={<Eventos />} />
           <Route path="crearevento" element={<CrearEvento />} />
+          <Route path="dashboar" element={<Dashboar />} />
+
 
 
         </Route>
