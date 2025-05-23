@@ -275,3 +275,150 @@
     font-size: 1.5rem;
   }
 }
+
+/* BOTONES JUGADORES ZOKA*/
+.btn-outline-primary,
+.btn-outline-danger {
+    background: var(--custom-btn-bg-color);
+    border: none;
+    border-radius: var(--border-radius-large);
+    color: var(--white-color);
+    font-family: var(--heading-font-family);
+    font-size: var(--p-font-size);
+    font-weight:var(--font-weight-bold);
+    transition: all 0.3s;
+    margin-bottom: 0;
+    padding-left: 10px;
+  transition: background 0.2s;
+}
+.btn-outline-secundary,
+.btn-outline-dangerA {
+    background: rgb(13, 1, 249);
+    border: none;
+    border-radius: var(--border-radius-large);
+    color: var(--white-color);
+    font-family: var(--heading-font-family);
+    font-size: var(--p-font-size);
+    font-weight:var(--font-weight-bold);
+    transition: all 0.3s;
+    margin-bottom: 0;
+    padding-left: 10px;
+  transition: background 0.2s;
+}
+.btn-outline-secundary:hover, 
+.btn-outline-dangerA:hover,
+.btn-outline-secundary:focus,
+.btn-outline-dangerA:focus {
+    color: #0d6efd; /* Azul Bootstrap o el azul que prefieras */
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.btn-outline-danger:hover,
+.btn-outline-danger:active,
+.btn-outline-danger.active {
+  background-color: #0d6efd; /* O el color que uses para el botón activo */
+  color: #ffffff;
+}
+
+/* Botón Jugador Azul */
+.btnJugadorAzul {
+  display: inline-block;
+  width: 45%;
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #010aff;
+  background: #0037ffae;
+  color: #ffffff;
+  border-radius: var(--border-radius-large, 50px);
+  font-weight: bold;
+  font-family: var(--heading-font-family, inherit);
+  font-size: var(--p-font-size, 1rem);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+}
+
+.btnJugadorAzul:hover,
+.btnJugadorAzul:focus {
+  background: #010aff;
+  color: #ffffff;
+}
+
+/* Botón Jugador Rojo */
+.btnJugadorRojo {
+  display: inline-block;
+  width: 45%;
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ff0019;
+  background: #ff000088;
+  color: #ffffff;
+  border-radius: var(--border-radius-large, 50px);
+  font-weight: bold;  
+  font-family: var(--heading-font-family, inherit);
+  font-size: var(--p-font-size, 1rem);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+}
+
+.btnJugadorRojo:hover,
+.btnJugadorRojo:focus {
+  background: #ff0019;
+  color: #fff;
+}
+
+.btn-warning{
+   display: inline-block;
+  width: 45%;
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ff0019;
+  background: #ff0000;
+  color: #ffffff;
+  border-radius: var(--border-radius-large, 50px);
+  font-weight: bold;  
+  font-family: var(--heading-font-family, inherit);
+  font-size: var(--p-font-size, 1rem);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+    line-height: 1.5;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.btn-warning:hover,
+.btn-warning:focus {
+  background: #ff000071;
+  color: #ffffff;
+  border: 0px solid #ff0000;
+}
+
+.btn-danger{
+   display: inline-block;
+  width: 45%;
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ff0019;
+  background: #ff0000;
+  color: #ffffff;
+  border-radius: var(--border-radius-large, 50px);
+  font-weight: bold;  
+  font-family: var(--heading-font-family, inherit);
+  font-size: var(--p-font-size, 1rem);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+  line-height: 1.5;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.btn-danger:hover,
+.btn-danger:focus {
+  background: #ff000071;
+  color: #ffffff;
+  border: 0px solid #ff0000;
+}
+/* fIN BOTONES JUGADORES ZOKA */
