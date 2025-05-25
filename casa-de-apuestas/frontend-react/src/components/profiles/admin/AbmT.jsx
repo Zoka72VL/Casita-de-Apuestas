@@ -1,6 +1,8 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-const Dashboar = () => {
+const AbmT = () => {
   return (
     <section className="contentHome" id="contentHome">
       <div className="container container-custom">
@@ -10,27 +12,28 @@ const Dashboar = () => {
               <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
                   className="btn custom-btn custom-border-btn w-100"
-                  to="/buscarusuario"
+                  to="/creartrivia"
                 >
-                    Panel Roles
+                  CREAR TRIVIA
                 </NavLink>
               </div>
               <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
                   className="btn custom-btn custom-border-btn w-100"
-                  to="/abmeventoytrivia"
+                  to="/crearevento"
                 >
-                  Panel Administracion
+                  CREAR EVENTO
                 </NavLink>
               </div>
-              <div className="col-12 col-md-7 text-center">
+                           <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
                   className="btn custom-btn custom-border-btn w-100"
                   to="/eventos"
                 >
-                  Ingresar a La Casita
+                  MODIFICAR EVENTO
                 </NavLink>
               </div>
+              
             </div>
           </div>
         </div>
@@ -39,4 +42,4 @@ const Dashboar = () => {
   );
 };
 
-export default Dashboar;
+export default AbmT;  

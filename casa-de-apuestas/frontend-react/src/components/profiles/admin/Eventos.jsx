@@ -87,7 +87,7 @@ const Eventos = () => {
 
         
         </div>
-
+    
       </section> 
   );
 };

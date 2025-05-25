@@ -26,6 +26,7 @@ import BuscarUsuario from "./components/profiles/admin/BuscarUsuario.jsx";
 import RestablecerPassword from "./components/profiles/admin/RestablecerPassword.jsx";
 import Eventos from "./components/profiles/admin/Eventos.jsx";
 import Dashboar from "./components/profiles/admin/Dashboar.jsx";
+import AbmT from "./components/profiles/admin/AbmT.jsx";
 
 
 const PrivateAdminPage = AdminPage;
@@ -61,7 +62,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="eventos" element={<Eventos />} />
           <Route path="crearevento" element={<CrearEvento />} />
           <Route path="dashboar" element={<Dashboar />} />
-
+          <Route path="abmt" element={<AbmT/>} />
 
 
         </Route>

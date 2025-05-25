@@ -23,7 +23,7 @@ const BuscarUsuario = () => {
                     required=""
                   />
 
-                  <label for="email">Ingre el email del Usuario</label>
+                  <label for="email">Ingrese el email del Usuario</label>
                 </div>
 
                 <div class="row justify-content-center align-items-center">
