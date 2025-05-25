@@ -53,10 +53,10 @@ const Eventos = () => {
                     min="1"
                     required
                   />
-                  <label for="lco">Ingresa la cantidad de LCO</label>
+                  <label htmlFor="lco">Ingresa la cantidad de LCO</label>
                 </div>
       
-            
+            <div className="row justify-content-center align-items-center">
                 <div className="row justify-content-center align-items-center mb-3">
                   <div className="col-12 d-grid gap-2">
                     <button type="submit" className="btn btn-success">Apostar</button>
@@ -78,6 +78,7 @@ const Eventos = () => {
                   >
                     Home
                   </NavLink>
+                  </div>
                 </div>
               </form>
             </div>
