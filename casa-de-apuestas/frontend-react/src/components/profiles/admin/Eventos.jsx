@@ -58,19 +58,27 @@ const Eventos = () => {
               <div className="row justify-content-center align-items-center">
                 <div className="row justify-content-center align-items-center mb-3">
                   <div className="col-12 d-grid gap-2">
-                    <button type="submit" className="btn btn-success">
+                    <button
+                      type="submit"
+                      className="form-control btn btn-primary w-100"
+                    >
                       Apostar
                     </button>
-                  </div>
-                  <div className="col-12 d-grid gap-2">
-                    <div className="row justify-content-center align-items-center mb-3">
-                      <button type="submit" className="btn btn-success">
+                    <button
+                      type="submit"
+                      className="form-control btn btn-primary w-100"
+                    >
+                      Modificar Evento
+                    </button>
+
+                    <div className="col-12 d-grid gap-2">
+                      <button
+                        type="submit"
+                        className="form-control btn btn-primary w-100"
+                      >
                         Pagar Apuesta
                       </button>
-                      <button type="button" className="btn btn-warning">
-                        Modificar Evento
-                      </button>
-                      <button type="button" className="btn btn-danger">
+                      <button type="button" className=" btn-eliminar">
                         Eliminar Evento
                       </button>
                     </div>
