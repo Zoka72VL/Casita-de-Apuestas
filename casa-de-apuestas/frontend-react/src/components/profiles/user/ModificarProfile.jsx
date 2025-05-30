@@ -8,7 +8,7 @@ const ModificarProfile = () => {
   return (
     <>
     <ModificarName/>
-    <RestablecerPassword/>
+    
     </>
 
 
