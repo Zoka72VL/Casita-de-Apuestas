@@ -29,6 +29,16 @@ const BuscarUsuario = () => {
     setUsuario(null);
     setEmail("");
   };
+    const handleAsignarAdmin = () => {
+    alert(`Usuario eliminado: ${usuario.nombre}`);
+    setUsuario(null);
+    setEmail("");
+  };
+    const handleModificarUsuario = () => {
+    alert(`Usuario eliminado: ${usuario.nombre}`);
+    setUsuario(null);
+    setEmail("");
+  };
 
   return (
     <section className="contentHome" id="contentHome">
@@ -72,8 +82,14 @@ const BuscarUsuario = () => {
                     <button onClick={handleEliminar} className="btn btn-danger">
                       Eliminar Usuario
                     </button>
+                                        <button onClick={handleAsignarAdmin} className="btn btn-danger">
+                      Designar como ADMIN
+                    </button>
+                                        <button onClick={handleModificarUsuario} className="btn btn-danger">
+                      Modificar Usuario
+                    </button>
                   </div>
-                )}
+                )}  
               </div>
             </form>
           </div>
