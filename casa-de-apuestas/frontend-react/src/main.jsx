@@ -28,6 +28,7 @@ import Eventos from "./components/profiles/admin/Eventos.jsx";
 import Dashboar from "./components/profiles/admin/Dashboar.jsx";
 import AbmT from "./components/profiles/admin/AbmT.jsx";
 import DashboarUsuario from "./components/profiles/admin/DashboarUsuario.jsx";
+import ModificarProfile from "./components/profiles/user/ModificarProfile.jsx";
 
 const PrivateAdminPage = AdminPage;
 const PrivateCasterPage = CasterPage;
@@ -64,6 +65,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="dashboar" element={<Dashboar />} />
           <Route path="abmt" element={<AbmT/>} />
           <Route path="dashboarusuario" element={<DashboarUsuario/>} />
+          <Route path="modificarperfil" element={<ModificarProfile/>} />
 
 
         </Route>
