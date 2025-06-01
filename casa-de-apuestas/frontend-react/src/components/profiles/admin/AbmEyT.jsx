@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-const AbmT = () => {
+const AbmEyT = () => {
   return (
     <section className="contentHome" id="contentHome">
       <div className="container container-custom">
@@ -11,26 +11,26 @@ const AbmT = () => {
             <div className="row justify-content-center align-items-center">
               <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
-                  className="btn custom-btn custom-border-btn w-100"
+                  className="custom-btn btn mt-4 w-100"
                   to="/creartrivia"
                 >
-                  CREAR TRIVIA
+                  Crear Trivia
                 </NavLink>
               </div>
               <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
-                  className="btn custom-btn custom-border-btn w-100"
+                  className="custom-btn btn mt-4 w-100"
                   to="/crearevento"
                 >
-                  CREAR EVENTO
+                  Crear Evento
                 </NavLink>
               </div>
                            <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
-                  className="btn custom-btn custom-border-btn w-100"
+                  className="custom-btn btn mt-4 w-100"
                   to="/eventos"
                 >
-                  MODIFICAR EVENTO
+                  Modificar Evento
                 </NavLink>
               </div>
               
@@ -42,4 +42,4 @@ const AbmT = () => {
   );
 };
 
-export default AbmT;  
+export default AbmEyT;  
