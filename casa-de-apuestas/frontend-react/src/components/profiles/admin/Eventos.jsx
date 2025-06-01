@@ -97,6 +97,7 @@ const Eventos = () => {
             </form>
           </div>
         </div>
+      </div>
     </section>
   );
 };
