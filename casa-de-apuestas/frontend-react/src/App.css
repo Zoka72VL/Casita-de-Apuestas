@@ -279,37 +279,37 @@
 /* BOTONES JUGADORES ZOKA*/
 .btn-outline-primary,
 .btn-outline-danger {
-    background: var(--custom-btn-bg-color);
-    border: none;
-    border-radius: var(--border-radius-large);
-    color: var(--white-color);
-    font-family: var(--heading-font-family);
-    font-size: var(--p-font-size);
-    font-weight:var(--font-weight-bold);
-    transition: all 0.3s;
-    margin-bottom: 0;
-    padding-left: 10px;
+  background: var(--custom-btn-bg-color);
+  border: none;
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-family: var(--heading-font-family);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-bold);
+  transition: all 0.3s;
+  margin-bottom: 0;
+  padding-left: 10px;
   transition: background 0.2s;
 }
 .btn-outline-secundary,
 .btn-outline-dangerA {
-    background: rgb(13, 1, 249);
-    border: none;
-    border-radius: var(--border-radius-large);
-    color: var(--white-color);
-    font-family: var(--heading-font-family);
-    font-size: var(--p-font-size);
-    font-weight:var(--font-weight-bold);
-    transition: all 0.3s;
-    margin-bottom: 0;
-    padding-left: 10px;
+  background: rgb(13, 1, 249);
+  border: none;
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-family: var(--heading-font-family);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-bold);
+  transition: all 0.3s;
+  margin-bottom: 0;
+  padding-left: 10px;
   transition: background 0.2s;
 }
-.btn-outline-secundary:hover, 
+.btn-outline-secundary:hover,
 .btn-outline-dangerA:hover,
 .btn-outline-secundary:focus,
 .btn-outline-dangerA:focus {
-    color: #0d6efd; /* Azul Bootstrap o el azul que prefieras */
+  color: #0d6efd; /* Azul Bootstrap o el azul que prefieras */
 }
 
 .btn-outline-primary:hover,
@@ -356,7 +356,7 @@
   background: #ff000088;
   color: #ffffff;
   border-radius: var(--border-radius-large, 50px);
-  font-weight: bold;  
+  font-weight: bold;
   font-family: var(--heading-font-family, inherit);
   font-size: var(--p-font-size, 1rem);
   cursor: pointer;
@@ -370,8 +370,8 @@
   color: #fff;
 }
 
-.btn-warning{
-   display: inline-block;
+.btn-warning {
+  display: inline-block;
   width: 45%;
   margin: 0 0.25rem;
   padding: 0.5rem 1rem;
@@ -379,13 +379,13 @@
   background: #ff0000;
   color: #ffffff;
   border-radius: var(--border-radius-large, 50px);
-  font-weight: bold;  
+  font-weight: bold;
   font-family: var(--heading-font-family, inherit);
   font-size: var(--p-font-size, 1rem);
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
   text-align: center;
-    line-height: 1.5;
+  line-height: 1.5;
   box-sizing: border-box;
   vertical-align: middle;
 }
@@ -396,8 +396,8 @@
   border: 0px solid #ff0000;
 }
 
-.btn-danger{
-   display: inline-block;
+.btn-danger {
+  display: inline-block;
   width: 45%;
   margin: 0 0.25rem;
   padding: 0.5rem 1rem;
@@ -405,7 +405,7 @@
   background: #ff0000;
   color: #ffffff;
   border-radius: var(--border-radius-large, 50px);
-  font-weight: bold;  
+  font-weight: bold;
   font-family: var(--heading-font-family, inherit);
   font-size: var(--p-font-size, 1rem);
   cursor: pointer;
@@ -420,5 +420,14 @@
   background: #ff000071;
   color: #ffffff;
   border: 0px solid #ff0000;
+}
+
+.btn-eliminar {
+  color: lawngreen;
+  border: 3px solid #ff2121;
+  border-radius: 25px;
+  z-index: 1;
+  margin: 2vh;
+  padding: 1vh;
 }
 /* fIN BOTONES JUGADORES ZOKA */
