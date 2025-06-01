@@ -12,15 +12,16 @@ const DashboarUsuario = () => {
 
               <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
-                  className="btn custom-btn custom-border-btn w-100"
+                  className="custom-btn btn mt-4 w-100"
                   to="/eventos"
                 >
                   BUSCAR EVENTOS
                 </NavLink>
               </div>
+
               <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
-                  className="btn custom-btn custom-border-btn w-100"
+                  className="custom-btn btn mt-4 w-100"
                   to="/respondertrivia"
                 >
                   CONTESTAR TRIVIA
@@ -28,7 +29,7 @@ const DashboarUsuario = () => {
               </div>
                            <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
-                  className="btn custom-btn custom-border-btn w-100"
+                  className="custom-btn btn mt-4 w-100"
                   to="/miperfil"
                 >
                   MI PERFIL
