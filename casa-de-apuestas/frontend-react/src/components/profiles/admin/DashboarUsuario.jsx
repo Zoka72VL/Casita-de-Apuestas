@@ -15,7 +15,7 @@ const DashboarUsuario = () => {
                   className="custom-btn btn mt-4 w-100"
                   to="/eventos"
                 >
-                  BUSCAR EVENTOS
+                  Buscar Eventos
                 </NavLink>
               </div>
 
@@ -24,15 +24,15 @@ const DashboarUsuario = () => {
                   className="custom-btn btn mt-4 w-100"
                   to="/respondertrivia"
                 >
-                  CONTESTAR TRIVIA
-                </NavLink>
+                  Contestar Trivia
+                </NavLink>  
               </div>
                            <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
                   className="custom-btn btn mt-4 w-100"
                   to="/miperfil"
                 >
-                  MI PERFIL
+                  Mi Perfil
                 </NavLink>
               </div>
               

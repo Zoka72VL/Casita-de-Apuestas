@@ -9,7 +9,7 @@ const Dashboar = () => {
             <div className="row justify-content-center align-items-center">
               <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
-                  className="btn custom-btn custom-border-btn w-100"
+                  className="custom-btn btn mt-4 w-100"
                   to="/buscarusuario"
                 >
                     Panel Roles
@@ -17,7 +17,7 @@ const Dashboar = () => {
               </div>
               <div className="col-12 col-md-7 text-center mb-3">
                 <NavLink
-                  className="btn custom-btn custom-border-btn w-100"
+                  className="custom-btn btn mt-4 w-100"
                   to="/abmeventoytrivia"
                 >
                   Panel Administracion
@@ -25,7 +25,7 @@ const Dashboar = () => {
               </div>
               <div className="col-12 col-md-7 text-center">
                 <NavLink
-                  className="btn custom-btn custom-border-btn w-100"
+                  className="custom-btn btn mt-4 w-100"
                   to="/eventos"
                 >
                   Ingresar a La Casita
