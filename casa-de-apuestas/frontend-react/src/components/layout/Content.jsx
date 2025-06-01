@@ -21,9 +21,19 @@ const Content = () => {
                 Sumate a la comunidad para ganar tus Lco
               </a>
             </div>
+            
+            
           </div>
+          <div className="alert alert-danger text-center mt-4" role="alert" style={{ borderRadius: "var(--border-radius-large, 50px)" }}>
+               <strong>¡Juega con responsabilidad!</strong> El juego de apuestas puede ser riesgoso. Si sentís que perdés el control o necesitás ayuda, visitá&nbsp;
+               <a href="https://jugadoresanonimos.org.ar/" target="_blank" rel="noopener noreferrer" className="alert-link">jugadoresanonimos.org.ar
+               </a>
+          </div>
+          
         </div>
+        
       </section>
+      
     </>
   );
 };

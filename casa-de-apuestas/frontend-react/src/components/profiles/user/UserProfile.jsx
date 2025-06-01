@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router";
+
 
 const UserProfile = () => {
   return (
@@ -47,20 +49,24 @@ const UserProfile = () => {
 
               <div className="row mb-3">
                 <div className="col-md-6 mb-2">
-                  <button
-                    type="submit"
-                    className="form-control btn btn-primary w-100"
+                  <NavLink
+                    className="btn custom-btn custom-border-btn w-100"
+                    to="/modificarperfil"
+                    end
                   >
                     Modificar Perfil
-                  </button>
+                  </NavLink>
+
                 </div>
-                <div className="col-md-6 mb-2">
-                  <button
-                    type="submit"
-                    className="form-control btn btn-primary w-100"
+                  <div className="col-md-6 mb-2">
+                  <NavLink
+                    className="btn custom-btn custom-border-btn w-100"
+                    to="/eventos"
+                    end
                   >
-                    Ir a los Eventos
-                  </button>
+                    Ir a los eventos
+                  </NavLink>
+
                 </div>
               </div>
 

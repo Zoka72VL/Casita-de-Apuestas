@@ -1,36 +1,42 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-const Dashboar = () => {
+const DashboarUsuario = () => {
   return (
     <section className="contentHome" id="contentHome">
       <div className="container container-custom">
         <div className="row frente">
           <div className="col-lg-6 col-md-8 col-12 mx-auto">
             <div className="row justify-content-center align-items-center">
+
               <div className="col-12 col-md-7 text-center mb-3">
-                <NavLink
-                  className="custom-btn btn mt-4 w-100"
-                  to="/buscarusuario"
-                >
-                    Panel Roles
-                </NavLink>
-              </div>
-              <div className="col-12 col-md-7 text-center mb-3">
-                <NavLink
-                  className="custom-btn btn mt-4 w-100"
-                  to="/abmeventoytrivia"
-                >
-                  Panel Administracion
-                </NavLink>
-              </div>
-              <div className="col-12 col-md-7 text-center">
                 <NavLink
                   className="custom-btn btn mt-4 w-100"
                   to="/eventos"
                 >
-                  Ingresar a La Casita
+                  Buscar Eventos
                 </NavLink>
               </div>
+
+              <div className="col-12 col-md-7 text-center mb-3">
+                <NavLink
+                  className="custom-btn btn mt-4 w-100"
+                  to="/respondertrivia"
+                >
+                  Contestar Trivia
+                </NavLink>  
+              </div>
+                           <div className="col-12 col-md-7 text-center mb-3">
+                <NavLink
+                  className="custom-btn btn mt-4 w-100"
+                  to="/miperfil"
+                >
+                  Mi Perfil
+                </NavLink>
+              </div>
+              
+              
             </div>
           </div>
         </div>
@@ -39,4 +45,4 @@ const Dashboar = () => {
   );
 };
 
-export default Dashboar;
+export default DashboarUsuario;  
