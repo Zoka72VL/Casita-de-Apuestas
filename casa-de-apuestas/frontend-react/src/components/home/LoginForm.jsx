@@ -7,7 +7,7 @@ const LoginForm = () => {
     <section className="contentHome" id="contentHome">
       <div className="container container-custom">
         <div className="row frente">
-          <div className="col-lg-6 col-md-8 col-12 mx-auto">
+          <div className="col-lg-6 col-md-8 col-12 m-auto p-2">
             <form
               id="loginForm"
               className="custom-form"
@@ -39,8 +39,8 @@ const LoginForm = () => {
                 />
                 <label htmlFor="password">Contraseña</label>
               </div>
-              <div className="row justify-content-center align-items-center">
-                <div className="col-12 col-md-5 mb-2">
+              <div className="row justify-content-center align-items-center gap-2">
+                <div className="col-12 col-md-7 text-center">
                   <button
                     type="submit"
                     className="form-control btn btn-primary w-100"
@@ -50,7 +50,7 @@ const LoginForm = () => {
                 </div>
                 <div className="col-12 col-md-7 text-center">
                   <NavLink
-                    className="btn custom-btn custom-border-btn w-100"
+                    className="btn custom-btn custom-border-btn w-100 m-auto"
                     to="/register"
                     end
                   >

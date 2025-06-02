@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router";
 
-
 const UserProfile = () => {
   return (
     <section className="contentHome" id="contentUser">
@@ -28,27 +27,27 @@ const UserProfile = () => {
                   style={{
                     width: "80px",
                     height: "80px",
+                    marginRight: "10px",
                     backgroundColor: "transparent",
                     boxShadow: "none",
                     border: "none",
                   }}
                 />
-
                 <h4
                   className="mb-0"
                   style={{
                     color: "gold",
                     border: "double 5px",
-                    marginLeft: "20px",
-                    padding: "5px",
+                    marginLeft: "10px",
+                    padding: "15px",
                   }}
                 >
                   500
                 </h4>
               </div>
 
-              <div className="row mb-3">
-                <div className="col-md-6 mb-2">
+              <article className="article">
+                <div className="col-md-6">
                   <NavLink
                     className="btn custom-btn custom-border-btn w-100"
                     to="/modificarperfil"
@@ -56,9 +55,8 @@ const UserProfile = () => {
                   >
                     Modificar Perfil
                   </NavLink>
-
                 </div>
-                  <div className="col-md-6 mb-2">
+                <div className="col-md-6">
                   <NavLink
                     className="btn custom-btn custom-border-btn w-100"
                     to="/eventos"
@@ -66,11 +64,10 @@ const UserProfile = () => {
                   >
                     Ir a los eventos
                   </NavLink>
-
                 </div>
-              </div>
+              </article>
 
-              <button type="submit" className="form-control btn w-100">
+              <button type="submit" className="form-control btn w-80">
                 Historial de Apuestas
               </button>
             </form>
