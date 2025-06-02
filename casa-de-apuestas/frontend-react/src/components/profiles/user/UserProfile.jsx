@@ -46,30 +46,30 @@ const UserProfile = () => {
                 </h4>
               </div>
 
-              <article className="article">
-                <div className="col-md-6">
-                  <NavLink
-                    className="btn custom-btn custom-border-btn w-100"
-                    to="/modificarperfil"
-                    end
-                  >
-                    Modificar Perfil
-                  </NavLink>
-                </div>
-                <div className="col-md-6">
-                  <NavLink
-                    className="btn custom-btn custom-border-btn w-100"
-                    to="/eventos"
-                    end
-                  >
-                    Ir a los eventos
-                  </NavLink>
-                </div>
+              <article className="menu-usuario buttons-wrapper">
+                <NavLink
+                  className="btn custom-btn custom-border-btn "
+                  to="/modificarperfil"
+                  end
+                >
+                  Modificar Perfil
+                </NavLink>
+                <NavLink
+                  className="btn custom-btn custom-border-btn "
+                  to="/eventos"
+                  end
+                >
+                  Ir a los eventos
+                </NavLink>
               </article>
-
-              <button type="submit" className="form-control btn w-80">
-                Historial de Apuestas
-              </button>
+              <article className="menu-usuario buttons-wrapper">
+                <button
+                  type=""
+                  className=" btn-eliminar btn custom-btn custom-border-btn"
+                >
+                  Historial de Apuestas
+                </button>
+              </article>
             </form>
           </div>
         </div>

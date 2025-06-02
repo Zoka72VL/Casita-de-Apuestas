@@ -428,6 +428,15 @@
   border-radius: 25px;
   z-index: 1;
   margin: 2vh;
-  padding: 1vh;
+  padding: 6px 18px 6px 18px;
 }
 /* fIN BOTONES JUGADORES ZOKA */
+/* MENU BOTONES USUARIOS */
+.menu-usuario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  z-index: 1;
+  margin-top: 8px;
+}
