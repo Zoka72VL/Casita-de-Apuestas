@@ -63,12 +63,13 @@ const UserProfile = () => {
                 </NavLink>
               </article>
               <article className="menu-usuario buttons-wrapper">
-                <button
-                  type=""
-                  className=" btn-eliminar btn custom-btn custom-border-btn"
+                <NavLink
+                  className=" btn-historialapuestas btn custom-btn custom-border-btn"
+                  to="/"
+                  end
                 >
                   Historial de Apuestas
-                </button>
+                </NavLink>
               </article>
             </form>
           </div>

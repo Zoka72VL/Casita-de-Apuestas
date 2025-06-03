@@ -422,15 +422,23 @@
   border: 0px solid #ff0000;
 }
 
-.btn-eliminar {
-  color: lawngreen;
+.btn-historialapuestas {
+  color: gold;
   border: 3px solid #ff2121;
   border-radius: 25px;
   z-index: 1;
   margin: 2vh;
   padding: 6px 18px 6px 18px;
 }
+.btn-historialapuestas:hover,
+.btn-historialapuestas:focus {
+  border-color: gold;
+  color: black;
+  background-color: gold;
+}
+
 /* fIN BOTONES JUGADORES ZOKA */
+
 /* MENU BOTONES USUARIOS */
 .menu-usuario {
   display: flex;
