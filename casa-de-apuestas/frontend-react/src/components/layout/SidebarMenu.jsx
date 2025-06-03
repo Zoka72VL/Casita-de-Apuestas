@@ -49,15 +49,28 @@ const SidebarMenu = () => {
             <NavLink to="/register" end onClick={handleNavClick}>
               Registro
             </NavLink>
-            <NavLink to="/events" end onClick={handleNavClick}>
+            <NavLink to="/dashboar" end onClick={handleNavClick}>
+              Control Admin
+            </NavLink>  
+            <NavLink to="/eventos" end onClick={handleNavClick}>
               Eventos Disponibles
             </NavLink>
-            <NavLink to="/counter" end onClick={handleNavClick}>
-              Ir al contador
+            <NavLink to="/respondertrivia" end onClick={handleNavClick}>
+              Trivia
+            </NavLink>
+            <NavLink to="/miperfil" end onClick={handleNavClick}>
+              Mi Perfil
+            </NavLink>
+            <NavLink to="/restablecerpassword" end onClick={handleNavClick}>
+              Modificar Contraseña
+            </NavLink>
+            <NavLink to="https://www.youtube.com/watch?v=HhSxiAD_1-c&list=PLHlvYBe9Y97aLlSp4MZjzhDTvK-dKWgF8" end onClick={handleNavClick}>
+              Radio Ser 
             </NavLink>
             <NavLink to="/" end onClick={handleNavClick}>
               Cerrar Sesión
             </NavLink>
+
           </nav>
         </div>
       </div>
