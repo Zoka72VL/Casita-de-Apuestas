@@ -1,4 +1,4 @@
-import SidebarMenu from "./SidebarMenu";
+// import SidebarMenu from "./SidebarMenu";
 import { NavLink } from "react-router";
 
 const Header = () => {
@@ -97,7 +97,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <SidebarMenu />
+      {/* <SidebarMenu /> */}
     </>
   );
 };
