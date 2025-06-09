@@ -31,6 +31,7 @@ const CrearEvento = () => {
                                </div>
                           </div>
 
+
                             <div className="row align-items-center mb-4">
   <div className="col-5">
     <div className="form-floating">
@@ -62,7 +63,15 @@ const CrearEvento = () => {
     </div>
   </div>
 </div>                  
-
+              <div className="col-12 col-md-7 text-center mb-3">
+                <NavLink
+                  className="custom-btn btn mt-4 w-100"
+                  to="/crearplayer"
+                >
+                  Crear Jugador
+                </NavLink>
+              </div>
+              
 
                               <div className="row mb-4">
                                 <div className="col-6">
