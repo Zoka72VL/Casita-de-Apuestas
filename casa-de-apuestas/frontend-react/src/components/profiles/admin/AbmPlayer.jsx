@@ -1,0 +1,40 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+const AbmEyT = () => {
+  return (
+    <section className="contentHome" id="contentHome">
+      <div className="container container-custom">
+        <div className="row frente">
+          <div className="col-lg-6 col-md-8 col-12 mx-auto">
+            <div className="row justify-content-center align-items-center">
+
+
+              <div className="col-12 col-md-7 text-center mb-3">
+                <NavLink
+                  className="custom-btn btn mt-4 w-100"
+                  to="/crearplayer"
+                >
+                  Crear Jugador
+                </NavLink>
+              </div>
+              <div className="col-12 col-md-7 text-center mb-3">
+                <NavLink
+                  className="custom-btn btn mt-4 w-100"
+                  to="/buscarplayer"
+                >
+                  Modificar Jugador
+                </NavLink>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AbmEyT;  

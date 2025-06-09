@@ -23,6 +23,7 @@ import UserProfile from "./components/profiles/user/UserProfile.jsx";
 import ResponderTrivia from "./components/profiles/admin/ResponderTrivia.jsx";
 import CrearTrivia from "./components/profiles/admin/CrearTrivia.jsx";
 import BuscarUsuario from "./components/profiles/admin/BuscarUsuario.jsx";
+import BuscarPlayer from "./components/profiles/admin/BuscarPlayer.jsx";
 import RestablecerPassword from "./components/profiles/admin/RestablecerPassword.jsx";
 import Eventos from "./components/profiles/admin/Eventos.jsx";
 import Dashboar from "./components/profiles/admin/Dashboar.jsx";
@@ -30,6 +31,7 @@ import AbmEyT from "./components/profiles/admin/AbmEyT.jsx";
 import DashboarUsuario from "./components/profiles/admin/DashboarUsuario.jsx";
 import ModificarProfile from "./components/profiles/user/ModificarProfile.jsx";
 import CrearPlayer from "./components/profiles/admin/CrearPlayer.jsx";
+import AbmPlayer from "./components/profiles/admin/AbmPlayer.jsx";
 
 const PrivateAdminPage = AdminPage;
 const PrivateCasterPage = CasterPage;
@@ -60,6 +62,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="respondertrivia" element={<ResponderTrivia />} />
           <Route path="creartrivia" element={<CrearTrivia />} />
           <Route path="buscarusuario" element={<BuscarUsuario />} />
+          <Route path="buscarplayer" element={<BuscarPlayer />} />
           <Route path="restablecerpassword" element={<RestablecerPassword />} />
           <Route path="eventos" element={<Eventos />} />
           <Route path="crearevento" element={<CrearEvento />} />
@@ -68,6 +71,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="dashboarusuario" element={<DashboarUsuario/>} />
           <Route path="modificarperfil" element={<ModificarProfile/>} />
           <Route path="crearplayer" element={<CrearPlayer/>} />
+          <Route path="abmplayer" element={<AbmPlayer/>} />
 
 
         </Route>
