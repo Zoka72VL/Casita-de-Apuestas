@@ -23,6 +23,16 @@ const Dashboar = () => {
                   Panel De Eventos y Trivias
                 </NavLink>
               </div>
+                            <div className="col-12 col-md-7 text-center mb-3">
+                <NavLink
+                  className="custom-btn btn mt-4 w-100"
+                  to="/abmplayer"
+                >
+                 Panel Jugadores
+                </NavLink>
+              </div>
+              
+              
               <div className="col-12 col-md-7 text-center">
                 <NavLink
                   className="custom-btn btn mt-4 w-100"
